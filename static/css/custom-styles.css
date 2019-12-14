@@ -1,0 +1,317 @@
+@charset "UTF-8";
+
+/* Custom styles for the HAMMA Mjolnir website */
+
+
+/* Table styles and color */
+
+.full-width .table-content-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.table-content-output table {
+  font-size: 0.8em;
+  line-height: 1.5em;
+  width: 100%;
+}
+
+.table-content-output thead {
+  line-height: 2em;
+}
+
+.table-content-output tbody {
+  color: #ffffff;
+  text-align: right;
+}
+
+.table-content-output tbody th,
+.table-content-output tbody td {
+  transition: 0.2s;
+}
+
+.table-content-output tbody th {
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+  width: 5%;
+}
+
+.table-content-output tbody td {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.light-bg-section .table-content-output th {
+  background-color: #e8ecf1;
+  background-color: var(--theme-bg-alt-color, #e8ecf1);
+}
+.dark-bg-section .table-content-output th {
+  background-color: #ffffff;
+  background-color: var(--theme-bg-color, #ffffff);
+}
+
+@media screen and (max-width: 1200px) {
+  .full-width .table-content-container {
+    width: 80%;
+  }
+  .table-content-output tbody th {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .full-width .table-content-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .table-content-output table {
+    font-size: 0.75em;
+  }
+  .table-content-output tbody th,
+  .table-content-output tbody td {
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .table-content-output table {
+    font-size: 0.7em;
+  }
+  .table-content-output tbody th,
+  .table-content-output tbody td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+  }
+}
+
+.table-cell-nocolor {
+  background-color: darkslategray;
+}
+.table-cell-null {
+  background-color: maroon;
+}
+
+.table-cell-red {
+  background-color: red;
+}
+.table-cell-maroon {
+  background-color: maroon;
+}
+.table-cell-orange {
+  background-color: darkorange;
+}
+.table-cell-yellow {
+  background-color: goldenrod;
+}
+.table-cell-lime {
+  background-color: forestgreen;
+}
+.table-cell-green {
+  background-color: darkgreen;
+}
+.table-cell-teal {
+  background-color: teal;
+}
+.table-cell-blue {
+  background-color: navy;
+}
+.table-cell-gray {
+  background-color: gray;
+}
+
+tbody tr:hover td,
+tbody tr:hover th,
+tbody tr:focus td,
+tbody tr:focus th,
+tbody tr:active td,
+tbody tr:active th {
+  background-color: #333333 !important;
+}
+
+
+/* Verbatim text content container */
+
+.full-width .text-content-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 864px;
+  width: 90%;
+}
+
+.text-content-container {
+  background-color: #001830;
+  border: 2px solid #808080;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+code.text-content-output {
+  background-color: transparent;
+  font-size: 0.65em;
+  line-height: 1.5em;
+  padding: 0;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .full-width .text-content-container {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 97.5%;
+  }
+}
+
+
+/* Plot object container */
+
+.plot-content-container {
+  border-radius: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 90%;
+}
+
+.light-bg-section .plot-content-container {
+  background-color: #e8ecf1;
+  background-color: var(--theme-bg-alt-color, #e8ecf1);
+}
+.dark-bg-section .plot-content-container {
+  background-color: #ffffff;
+  background-color: var(--theme-bg-color, #ffffff);
+}
+
+@media screen and (max-width: 1200px) {
+  .full-width .plot-content-container {
+    border-radius: 40px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 97.5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .full-width .plot-content-container {
+    border-radius: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .full-width .plot-content-container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+
+/* Log-specific formatting */
+
+span.critical {
+  color: red;
+}
+span.error {
+  color: orange;
+}
+span.warning {
+  color: yellow;
+}
+span.info {
+  color: cyan;
+}
+span.debug {
+  color: green;
+}
+
+#section-fulllog .text-content-container {
+  max-width: 1080px;
+}
+
+@media screen and (max-width: 1200px) {
+  #section-fulllog .text-content-container {
+    max-width: 864px;
+  }
+}
+
+
+/* Daily page formatting */
+
+#section-dailytop {
+  margin: 0;
+  padding: 0;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.button-container button {
+  border-radius: 3px;
+  flex: 1 1 auto;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.button-container button:hover:disabled {
+  color: gray;
+}
+
+#section-dailytable .table-content-container {
+  height: 720px;
+  overflow: scroll;
+  width: 95%;
+}
+
+@media screen and (max-width: 1200px) {
+  .button-container {
+    width: 90%;
+  }
+  .button-container button {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button-container {
+    width: 95%;
+  }
+  .button-container button {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button-container {
+    width: 97.5%;
+  }
+  .button-container button {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}

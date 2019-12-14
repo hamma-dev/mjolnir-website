@@ -1,0 +1,30 @@
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received)
+2019-10-29 11:45:25.312 | 7183 | INFO | brokkr.startup | Interrupted by signal 2; terminating Brokkr
+2019-10-29 13:05:25.222 | 74 | INFO | brokkr.startup | Starting Brokkr...
+2019-10-29 13:05:28.407 | 3258 | ERROR | brokkr.sunsaver | ModbusIOException reading register data for /dev/ttyUSB0: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received)
+2019-10-29 13:05:28.408 | 3260 | INFO | brokkr.sunsaver | Details: ModbusSerialClient(rtu baud[9600])
+Traceback (most recent call last):
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 164, in read_raw_sunsaver_data
+    raise register_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received)
+2019-10-29 13:09:49.165 | 264016 | INFO | brokkr.startup | Interrupted by signal 15; terminating Brokkr
+2019-10-29 13:11:24.368 | 86 | INFO | brokkr.startup | Starting Brokkr...
+2019-10-29 13:59:01.118 | 2856837 | INFO | brokkr.startup | Interrupted by signal 15; terminating Brokkr
+2019-10-29 14:47:29.310 | 88 | INFO | brokkr.startup | Starting Brokkr...
+2019-11-03 02:53:47.271 | 389178049 | INFO | brokkr.startup | Interrupted by signal 15; terminating Brokkr
+2019-11-03 02:54:21.720 | 91 | INFO | brokkr.startup | Starting Brokkr...
+2019-11-07 05:01:43.577 | 353241949 | INFO | brokkr.startup | Interrupted by signal 15; terminating Brokkr
+2019-11-07 05:15:26.938 | 92 | INFO | brokkr.startup | Starting Brokkr...
+2019-11-07 05:39:56.923 | 1470077 | INFO | brokkr.startup | Interrupted by signal 15; terminating Brokkr
+2019-11-07 07:40:29.802 | 43 | INFO | brokkr.startup | Starting Brokkr...
+2019-11-16 00:55:32.862 | 753303104 | ERROR | brokkr.sunsaver | ModbusIOException reading register data for /dev/ttyUSB0: Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+2019-11-16 00:55:32.863 | 753303105 | INFO | brokkr.sunsaver | Details: ModbusSerialClient(rtu baud[9600])
+Traceback (most recent call last):
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 164, in read_raw_sunsaver_data
+    raise register_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+2019-11-19 11:32:47.311 | 1050737553 | INFO | brokkr.startup | Interrupted by signal 15; terminating Brokkr
+2019-11-19 11:34:02.913 | 46 | INFO | brokkr.startup | Starting Brokkr...
+2019-12-01 01:09:43.238 | 109 | INFO | brokkr.startup | Starting Brokkr...
+2019-12-12 02:51:50.663 | 956527534 | INFO | brokkr.startup | Interrupted by signal 15; terminating Brokkr
+2019-12-12 02:52:24.130 | 105 | INFO | brokkr.startup | Starting Brokkr...
