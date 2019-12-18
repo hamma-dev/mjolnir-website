@@ -62,3 +62,15 @@ pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] No Response 
 2019-12-01 01:09:43.238 | 109 | INFO | brokkr.startup | Starting Brokkr...
 2019-12-12 02:51:50.663 | 956527534 | INFO | brokkr.startup | Interrupted by signal 15; terminating Brokkr
 2019-12-12 02:52:24.130 | 105 | INFO | brokkr.startup | Starting Brokkr...
+2019-12-18 17:44:28.175 | 571924150 | ERROR | brokkr.sunsaver | ModbusIOException reading register data for /dev/ttyUSB0: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received)
+2019-12-18 17:44:28.179 | 571924155 | INFO | brokkr.sunsaver | Details: ModbusSerialClient(rtu baud[9600])
+Traceback (most recent call last):
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 165, in read_raw_sunsaver_data
+    raise register_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received)
+2019-12-18 17:45:28.166 | 571984142 | ERROR | brokkr.sunsaver | ModbusIOException reading register data for /dev/ttyUSB0: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received)
+2019-12-18 17:45:28.171 | 571984146 | INFO | brokkr.sunsaver | Details: ModbusSerialClient(rtu baud[9600])
+Traceback (most recent call last):
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 165, in read_raw_sunsaver_data
+    raise register_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received)
