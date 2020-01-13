@@ -6,8 +6,8 @@
   File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 634, in _update_dtr_state
     fcntl.ioctl(self.fd, TIOCMBIS, TIOCM_DTR_str)
 OSError: [Errno 5] Input/output error
-2020-01-13 01:34:07.220 | 2186400138 | CRITICAL | brokkr.monitor | OSError caught at main level: [Errno 5] Input/output error
-2020-01-13 01:34:07.222 | 2186400139 | INFO | brokkr.monitor | Details:
+2020-01-13 01:44:07.220 | 2187000138 | CRITICAL | brokkr.monitor | OSError caught at main level: [Errno 5] Input/output error
+2020-01-13 01:44:07.222 | 2187000140 | INFO | brokkr.monitor | Details:
 Traceback (most recent call last):
   File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 75, in start_monitoring
     record_status_data(output_path, verbose=verbose)
