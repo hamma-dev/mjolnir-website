@@ -1,13 +1,11 @@
-    parity=self.parity)
-  File "/usr/lib/python3/dist-packages/serial/serialutil.py", line 240, in __init__
     self.open()
   File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 286, in open
     self._update_dtr_state()
   File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 634, in _update_dtr_state
     fcntl.ioctl(self.fd, TIOCMBIS, TIOCM_DTR_str)
 OSError: [Errno 5] Input/output error
-2020-01-14 18:24:07.213 | 2333400131 | CRITICAL | brokkr.monitor | OSError caught at main level: [Errno 5] Input/output error
-2020-01-14 18:24:07.214 | 2333400132 | INFO | brokkr.monitor | Details:
+2020-01-14 18:28:07.213 | 2333640130 | CRITICAL | brokkr.monitor | OSError caught at main level: [Errno 5] Input/output error
+2020-01-14 18:28:07.214 | 2333640132 | INFO | brokkr.monitor | Details:
 Traceback (most recent call last):
   File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 75, in start_monitoring
     record_status_data(output_path, verbose=verbose)
@@ -28,3 +26,5 @@ Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 634, in _update_dtr_state
     fcntl.ioctl(self.fd, TIOCMBIS, TIOCM_DTR_str)
 OSError: [Errno 5] Input/output error
+2020-01-14 18:28:58.991 | 2333691909 | INFO | brokkr.startup | Interrupted by signal 15; terminating Brokkr
+2020-01-14 18:31:13.323 | 109 | INFO | brokkr.startup | Starting Brokkr...
