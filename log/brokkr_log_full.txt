@@ -65628,3 +65628,223 @@ Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 634, in _update_dtr_state
     fcntl.ioctl(self.fd, TIOCMBIS, TIOCM_DTR_str)
 OSError: [Errno 5] Input/output error
+2020-01-14 03:55:08.221 | 2281261139 | CRITICAL | brokkr.monitor | OSError caught at main level: [Errno 5] Input/output error
+2020-01-14 03:55:08.222 | 2281261140 | INFO | brokkr.monitor | Details:
+Traceback (most recent call last):
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 75, in start_monitoring
+    record_status_data(output_path, verbose=verbose)
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 49, in record_status_data
+    status_data = get_status_data()
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 39, in get_status_data
+    output_data = item.fn()
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 244, in get_sunsaver_data
+    register_data = read_raw_sunsaver_data(**kwargs)
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 160, in read_raw_sunsaver_data
+    if mppt_client.connect():
+  File "/home/thor/dev/brokkrenv/lib/python3.7/site-packages/pymodbus/client/sync.py", line 481, in connect
+    parity=self.parity)
+  File "/usr/lib/python3/dist-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 286, in open
+    self._update_dtr_state()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 634, in _update_dtr_state
+    fcntl.ioctl(self.fd, TIOCMBIS, TIOCM_DTR_str)
+OSError: [Errno 5] Input/output error
+2020-01-14 03:56:08.221 | 2281321139 | CRITICAL | brokkr.monitor | OSError caught at main level: [Errno 5] Input/output error
+2020-01-14 03:56:08.223 | 2281321141 | INFO | brokkr.monitor | Details:
+Traceback (most recent call last):
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 75, in start_monitoring
+    record_status_data(output_path, verbose=verbose)
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 49, in record_status_data
+    status_data = get_status_data()
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 39, in get_status_data
+    output_data = item.fn()
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 244, in get_sunsaver_data
+    register_data = read_raw_sunsaver_data(**kwargs)
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 160, in read_raw_sunsaver_data
+    if mppt_client.connect():
+  File "/home/thor/dev/brokkrenv/lib/python3.7/site-packages/pymodbus/client/sync.py", line 481, in connect
+    parity=self.parity)
+  File "/usr/lib/python3/dist-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 286, in open
+    self._update_dtr_state()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 634, in _update_dtr_state
+    fcntl.ioctl(self.fd, TIOCMBIS, TIOCM_DTR_str)
+OSError: [Errno 5] Input/output error
+2020-01-14 03:57:08.222 | 2281381140 | CRITICAL | brokkr.monitor | OSError caught at main level: [Errno 5] Input/output error
+2020-01-14 03:57:08.223 | 2281381141 | INFO | brokkr.monitor | Details:
+Traceback (most recent call last):
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 75, in start_monitoring
+    record_status_data(output_path, verbose=verbose)
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 49, in record_status_data
+    status_data = get_status_data()
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 39, in get_status_data
+    output_data = item.fn()
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 244, in get_sunsaver_data
+    register_data = read_raw_sunsaver_data(**kwargs)
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 160, in read_raw_sunsaver_data
+    if mppt_client.connect():
+  File "/home/thor/dev/brokkrenv/lib/python3.7/site-packages/pymodbus/client/sync.py", line 481, in connect
+    parity=self.parity)
+  File "/usr/lib/python3/dist-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 286, in open
+    self._update_dtr_state()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 634, in _update_dtr_state
+    fcntl.ioctl(self.fd, TIOCMBIS, TIOCM_DTR_str)
+OSError: [Errno 5] Input/output error
+2020-01-14 03:58:08.223 | 2281441141 | CRITICAL | brokkr.monitor | OSError caught at main level: [Errno 5] Input/output error
+2020-01-14 03:58:08.225 | 2281441143 | INFO | brokkr.monitor | Details:
+Traceback (most recent call last):
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 75, in start_monitoring
+    record_status_data(output_path, verbose=verbose)
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 49, in record_status_data
+    status_data = get_status_data()
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 39, in get_status_data
+    output_data = item.fn()
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 244, in get_sunsaver_data
+    register_data = read_raw_sunsaver_data(**kwargs)
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 160, in read_raw_sunsaver_data
+    if mppt_client.connect():
+  File "/home/thor/dev/brokkrenv/lib/python3.7/site-packages/pymodbus/client/sync.py", line 481, in connect
+    parity=self.parity)
+  File "/usr/lib/python3/dist-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 286, in open
+    self._update_dtr_state()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 634, in _update_dtr_state
+    fcntl.ioctl(self.fd, TIOCMBIS, TIOCM_DTR_str)
+OSError: [Errno 5] Input/output error
+2020-01-14 03:59:08.222 | 2281501140 | CRITICAL | brokkr.monitor | OSError caught at main level: [Errno 5] Input/output error
+2020-01-14 03:59:08.223 | 2281501141 | INFO | brokkr.monitor | Details:
+Traceback (most recent call last):
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 75, in start_monitoring
+    record_status_data(output_path, verbose=verbose)
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 49, in record_status_data
+    status_data = get_status_data()
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 39, in get_status_data
+    output_data = item.fn()
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 244, in get_sunsaver_data
+    register_data = read_raw_sunsaver_data(**kwargs)
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 160, in read_raw_sunsaver_data
+    if mppt_client.connect():
+  File "/home/thor/dev/brokkrenv/lib/python3.7/site-packages/pymodbus/client/sync.py", line 481, in connect
+    parity=self.parity)
+  File "/usr/lib/python3/dist-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 286, in open
+    self._update_dtr_state()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 634, in _update_dtr_state
+    fcntl.ioctl(self.fd, TIOCMBIS, TIOCM_DTR_str)
+OSError: [Errno 5] Input/output error
+2020-01-14 04:00:08.221 | 2281561139 | CRITICAL | brokkr.monitor | OSError caught at main level: [Errno 5] Input/output error
+2020-01-14 04:00:08.222 | 2281561140 | INFO | brokkr.monitor | Details:
+Traceback (most recent call last):
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 75, in start_monitoring
+    record_status_data(output_path, verbose=verbose)
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 49, in record_status_data
+    status_data = get_status_data()
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 39, in get_status_data
+    output_data = item.fn()
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 244, in get_sunsaver_data
+    register_data = read_raw_sunsaver_data(**kwargs)
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 160, in read_raw_sunsaver_data
+    if mppt_client.connect():
+  File "/home/thor/dev/brokkrenv/lib/python3.7/site-packages/pymodbus/client/sync.py", line 481, in connect
+    parity=self.parity)
+  File "/usr/lib/python3/dist-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 286, in open
+    self._update_dtr_state()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 634, in _update_dtr_state
+    fcntl.ioctl(self.fd, TIOCMBIS, TIOCM_DTR_str)
+OSError: [Errno 5] Input/output error
+2020-01-14 04:01:08.221 | 2281621139 | CRITICAL | brokkr.monitor | OSError caught at main level: [Errno 5] Input/output error
+2020-01-14 04:01:08.223 | 2281621141 | INFO | brokkr.monitor | Details:
+Traceback (most recent call last):
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 75, in start_monitoring
+    record_status_data(output_path, verbose=verbose)
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 49, in record_status_data
+    status_data = get_status_data()
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 39, in get_status_data
+    output_data = item.fn()
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 244, in get_sunsaver_data
+    register_data = read_raw_sunsaver_data(**kwargs)
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 160, in read_raw_sunsaver_data
+    if mppt_client.connect():
+  File "/home/thor/dev/brokkrenv/lib/python3.7/site-packages/pymodbus/client/sync.py", line 481, in connect
+    parity=self.parity)
+  File "/usr/lib/python3/dist-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 286, in open
+    self._update_dtr_state()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 634, in _update_dtr_state
+    fcntl.ioctl(self.fd, TIOCMBIS, TIOCM_DTR_str)
+OSError: [Errno 5] Input/output error
+2020-01-14 04:02:08.221 | 2281681139 | CRITICAL | brokkr.monitor | OSError caught at main level: [Errno 5] Input/output error
+2020-01-14 04:02:08.222 | 2281681140 | INFO | brokkr.monitor | Details:
+Traceback (most recent call last):
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 75, in start_monitoring
+    record_status_data(output_path, verbose=verbose)
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 49, in record_status_data
+    status_data = get_status_data()
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 39, in get_status_data
+    output_data = item.fn()
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 244, in get_sunsaver_data
+    register_data = read_raw_sunsaver_data(**kwargs)
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 160, in read_raw_sunsaver_data
+    if mppt_client.connect():
+  File "/home/thor/dev/brokkrenv/lib/python3.7/site-packages/pymodbus/client/sync.py", line 481, in connect
+    parity=self.parity)
+  File "/usr/lib/python3/dist-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 286, in open
+    self._update_dtr_state()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 634, in _update_dtr_state
+    fcntl.ioctl(self.fd, TIOCMBIS, TIOCM_DTR_str)
+OSError: [Errno 5] Input/output error
+2020-01-14 04:03:08.221 | 2281741139 | CRITICAL | brokkr.monitor | OSError caught at main level: [Errno 5] Input/output error
+2020-01-14 04:03:08.223 | 2281741141 | INFO | brokkr.monitor | Details:
+Traceback (most recent call last):
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 75, in start_monitoring
+    record_status_data(output_path, verbose=verbose)
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 49, in record_status_data
+    status_data = get_status_data()
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 39, in get_status_data
+    output_data = item.fn()
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 244, in get_sunsaver_data
+    register_data = read_raw_sunsaver_data(**kwargs)
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 160, in read_raw_sunsaver_data
+    if mppt_client.connect():
+  File "/home/thor/dev/brokkrenv/lib/python3.7/site-packages/pymodbus/client/sync.py", line 481, in connect
+    parity=self.parity)
+  File "/usr/lib/python3/dist-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 286, in open
+    self._update_dtr_state()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 634, in _update_dtr_state
+    fcntl.ioctl(self.fd, TIOCMBIS, TIOCM_DTR_str)
+OSError: [Errno 5] Input/output error
+2020-01-14 04:04:08.212 | 2281801130 | CRITICAL | brokkr.monitor | OSError caught at main level: [Errno 5] Input/output error
+2020-01-14 04:04:08.213 | 2281801131 | INFO | brokkr.monitor | Details:
+Traceback (most recent call last):
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 75, in start_monitoring
+    record_status_data(output_path, verbose=verbose)
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 49, in record_status_data
+    status_data = get_status_data()
+  File "/home/thor/dev/brokkr/src/brokkr/monitor.py", line 39, in get_status_data
+    output_data = item.fn()
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 244, in get_sunsaver_data
+    register_data = read_raw_sunsaver_data(**kwargs)
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 160, in read_raw_sunsaver_data
+    if mppt_client.connect():
+  File "/home/thor/dev/brokkrenv/lib/python3.7/site-packages/pymodbus/client/sync.py", line 481, in connect
+    parity=self.parity)
+  File "/usr/lib/python3/dist-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 286, in open
+    self._update_dtr_state()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 634, in _update_dtr_state
+    fcntl.ioctl(self.fd, TIOCMBIS, TIOCM_DTR_str)
+OSError: [Errno 5] Input/output error
