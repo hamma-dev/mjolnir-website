@@ -1,4 +1,3 @@
-    self._update_dtr_state()
   File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 634, in _update_dtr_state
     fcntl.ioctl(self.fd, TIOCMBIS, TIOCM_DTR_str)
 OSError: [Errno 5] Input/output error
@@ -28,3 +27,4 @@ OSError: [Errno 5] Input/output error
 2020-01-14 18:31:13.323 | 109 | INFO | brokkr.startup | Starting Brokkr...
 2020-01-14 18:55:31.830 | 1458617 | INFO | brokkr.startup | Interrupted by signal 15; terminating Brokkr
 2020-01-14 18:55:45.563 | 47 | INFO | brokkr.startup | Starting Brokkr...
+2020-01-21 16:43:52.986 | 107 | INFO | brokkr.startup | Starting Brokkr...
