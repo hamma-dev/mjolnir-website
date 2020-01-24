@@ -1,4 +1,3 @@
-OSError: [Errno 5] Input/output error
 2020-01-24 18:37:15.206 | 960088 | ERROR | brokkr.sunsaver | OSError connecting to charge controller device /dev/ttyUSB0: [Errno 5] Input/output error
 2020-01-24 18:37:15.208 | 960089 | INFO | brokkr.sunsaver | Details: ModbusSerialClient(rtu baud[9600])
 Traceback (most recent call last):
@@ -28,3 +27,4 @@ Traceback (most recent call last):
     fcntl.ioctl(self.fd, TIOCMBIS, TIOCM_DTR_str)
 OSError: [Errno 5] Input/output error
 2020-01-24 18:38:36.318 | 1041200 | INFO | brokkr.startup | Interrupted by signal 15; terminating Brokkr
+2020-01-24 19:43:42.009 | 47 | INFO | brokkr.startup | Starting Brokkr...
