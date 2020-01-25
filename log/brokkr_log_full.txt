@@ -340,3 +340,5 @@ OSError: [Errno 5] Input/output error
 2020-01-25 03:42:28.319 | INFO | brokkr.start | Monitor arguments: {} (T+81 ms)
 2020-01-25 03:42:28.330 | INFO | brokkr.config.main | Rendered config: {'version': 1, 'general': {'ip_sensor': '10.10.10.1', 'output_path': PosixPath('/home/thor/data')}, 'monitor': {'interval_log_s': 60, 'interval_sleep_s': 1, 'na_marker': 'NA', 'output_path': PosixPath('/home/thor/data/monitoring'), 'sensor': {'hs_port': 8084, 'hs_timeout_s': 2, 'ping_timeout_s': 1}, 'sunsaver': {'pid_list': [24597], 'port': '', 'start_offset': 8, 'unit': 1}}, 'site': {'name_prefix': 'hamma', 'number': '', 'description': 'Test Sensor (Default)'}} (T+92 ms)
 2020-01-25 03:42:28.335 | INFO | brokkr.monitoring.monitor | Ensuring monitoring directory at: /home/thor/data/monitoring (T+97 ms)
+2020-01-25 04:12:08.860 | WARNING | brokkr.start | Interrupted by signal 15; terminating Brokkr (T+1780623 ms)
+2020-01-25 04:12:13.922 | 53 | INFO | brokkr.startup | Starting Brokkr...
