@@ -1,7 +1,7 @@
     fcntl.ioctl(self.fd, TIOCMBIS, TIOCM_DTR_str)
 OSError: [Errno 5] Input/output error
-2020-01-25 01:19:43.061 | 20161099 | ERROR | brokkr.sunsaver | OSError connecting to charge controller device /dev/ttyUSB0: [Errno 5] Input/output error
-2020-01-25 01:19:43.062 | 20161100 | INFO | brokkr.sunsaver | Details: ModbusSerialClient(rtu baud[9600])
+2020-01-25 01:29:43.050 | 20761088 | ERROR | brokkr.sunsaver | OSError connecting to charge controller device /dev/ttyUSB0: [Errno 5] Input/output error
+2020-01-25 01:29:43.052 | 20761090 | INFO | brokkr.sunsaver | Details: ModbusSerialClient(rtu baud[9600])
 Traceback (most recent call last):
   File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 161, in read_raw_sunsaver_data
     connect_successful = mppt_client.connect()
@@ -14,8 +14,8 @@ Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 634, in _update_dtr_state
     fcntl.ioctl(self.fd, TIOCMBIS, TIOCM_DTR_str)
 OSError: [Errno 5] Input/output error
-2020-01-25 01:20:43.057 | 20221095 | ERROR | brokkr.sunsaver | OSError connecting to charge controller device /dev/ttyUSB0: [Errno 5] Input/output error
-2020-01-25 01:20:43.059 | 20221097 | INFO | brokkr.sunsaver | Details: ModbusSerialClient(rtu baud[9600])
+2020-01-25 01:30:43.050 | 20821088 | ERROR | brokkr.sunsaver | OSError connecting to charge controller device /dev/ttyUSB0: [Errno 5] Input/output error
+2020-01-25 01:30:43.052 | 20821090 | INFO | brokkr.sunsaver | Details: ModbusSerialClient(rtu baud[9600])
 Traceback (most recent call last):
   File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 161, in read_raw_sunsaver_data
     connect_successful = mppt_client.connect()
