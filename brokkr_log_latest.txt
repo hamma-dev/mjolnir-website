@@ -1,8 +1,3 @@
-    connect_successful = mppt_client.connect()
-  File "/home/thor/dev/brokkrenv/lib/python3.7/site-packages/pymodbus/client/sync.py", line 481, in connect
-    parity=self.parity)
-  File "/usr/lib/python3/dist-packages/serial/serialutil.py", line 240, in __init__
-    self.open()
   File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 286, in open
     self._update_dtr_state()
   File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 634, in _update_dtr_state
@@ -28,3 +23,8 @@ OSError: [Errno 5] Input/output error
 2020-01-25 03:04:36.054 | 2427 | ERROR | brokkr.sunsaver | Error reading register data: Cannot connect to device /dev/ttyUSB0
 2020-01-25 03:04:36.055 | 2427 | INFO | brokkr.sunsaver | Device info: ModbusSerialClient(rtu baud[9600]); Port info: {'device': '/dev/ttyUSB0', 'name': 'ttyUSB0', 'description': 'FT230X Basic UART', 'hwid': 'USB VID:PID=0403:6015 SER=DM00N0H5 LOCATION=1-1.3', 'vid': 1027, 'pid': 24597, 'serial_number': 'DM00N0H5', 'location': '1-1.3', 'manufacturer': 'FTDI', 'product': 'FT230X Basic UART', 'interface': None, 'usb_device_path': '/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.3', 'device_path': '/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.3/1-1.3:1.0/ttyUSB0', 'subsystem': 'usb-serial', 'usb_interface_path': '/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.3/1-1.3:1.0'}
 2020-01-25 03:39:55.497 | 2121869 | INFO | brokkr.startup | Interrupted by signal 15; terminating Brokkr
+2020-01-25 03:42:28.317 | INFO | brokkr.start | Starting Brokkr version 0.3.0.dev0... (T+80 ms)
+2020-01-25 03:42:28.318 | INFO | brokkr.start | Starting monitoring system... (T+81 ms)
+2020-01-25 03:42:28.319 | INFO | brokkr.start | Monitor arguments: {} (T+81 ms)
+2020-01-25 03:42:28.330 | INFO | brokkr.config.main | Rendered config: {'version': 1, 'general': {'ip_sensor': '10.10.10.1', 'output_path': PosixPath('/home/thor/data')}, 'monitor': {'interval_log_s': 60, 'interval_sleep_s': 1, 'na_marker': 'NA', 'output_path': PosixPath('/home/thor/data/monitoring'), 'sensor': {'hs_port': 8084, 'hs_timeout_s': 2, 'ping_timeout_s': 1}, 'sunsaver': {'pid_list': [24597], 'port': '', 'start_offset': 8, 'unit': 1}}, 'site': {'name_prefix': 'hamma', 'number': '', 'description': 'Test Sensor (Default)'}} (T+92 ms)
+2020-01-25 03:42:28.335 | INFO | brokkr.monitoring.monitor | Ensuring monitoring directory at: /home/thor/data/monitoring (T+97 ms)
