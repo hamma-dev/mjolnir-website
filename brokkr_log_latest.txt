@@ -1,30 +1,30 @@
-2020-01-25 00:41:43.033 | 17881071 | ERROR | pymodbus.client.sync | [Errno 13] could not open port /dev/ttyAMA0: [Errno 13] Permission denied: '/dev/ttyAMA0'
-2020-01-25 00:41:43.035 | 17881074 | ERROR | brokkr.sunsaver | Error reading register data: Cannot connect to device /dev/ttyAMA0
-2020-01-25 00:41:43.036 | 17881074 | INFO | brokkr.sunsaver | Device info: ModbusSerialClient(rtu baud[9600])
-2020-01-25 00:42:43.033 | 17941071 | ERROR | pymodbus.client.sync | [Errno 13] could not open port /dev/ttyAMA0: [Errno 13] Permission denied: '/dev/ttyAMA0'
-2020-01-25 00:42:43.036 | 17941074 | ERROR | brokkr.sunsaver | Error reading register data: Cannot connect to device /dev/ttyAMA0
-2020-01-25 00:42:43.038 | 17941076 | INFO | brokkr.sunsaver | Device info: ModbusSerialClient(rtu baud[9600])
-2020-01-25 00:43:43.042 | 18001080 | ERROR | pymodbus.client.sync | [Errno 13] could not open port /dev/ttyAMA0: [Errno 13] Permission denied: '/dev/ttyAMA0'
-2020-01-25 00:43:43.043 | 18001081 | ERROR | brokkr.sunsaver | Error reading register data: Cannot connect to device /dev/ttyAMA0
-2020-01-25 00:43:43.044 | 18001082 | INFO | brokkr.sunsaver | Device info: ModbusSerialClient(rtu baud[9600])
-2020-01-25 00:44:43.042 | 18061080 | ERROR | pymodbus.client.sync | [Errno 13] could not open port /dev/ttyAMA0: [Errno 13] Permission denied: '/dev/ttyAMA0'
-2020-01-25 00:44:43.043 | 18061081 | ERROR | brokkr.sunsaver | Error reading register data: Cannot connect to device /dev/ttyAMA0
-2020-01-25 00:44:43.044 | 18061082 | INFO | brokkr.sunsaver | Device info: ModbusSerialClient(rtu baud[9600])
-2020-01-25 00:45:43.042 | 18121080 | ERROR | pymodbus.client.sync | [Errno 13] could not open port /dev/ttyAMA0: [Errno 13] Permission denied: '/dev/ttyAMA0'
-2020-01-25 00:45:43.043 | 18121081 | ERROR | brokkr.sunsaver | Error reading register data: Cannot connect to device /dev/ttyAMA0
-2020-01-25 00:45:43.044 | 18121082 | INFO | brokkr.sunsaver | Device info: ModbusSerialClient(rtu baud[9600])
-2020-01-25 00:46:43.042 | 18181080 | ERROR | pymodbus.client.sync | [Errno 13] could not open port /dev/ttyAMA0: [Errno 13] Permission denied: '/dev/ttyAMA0'
-2020-01-25 00:46:43.043 | 18181081 | ERROR | brokkr.sunsaver | Error reading register data: Cannot connect to device /dev/ttyAMA0
-2020-01-25 00:46:43.044 | 18181082 | INFO | brokkr.sunsaver | Device info: ModbusSerialClient(rtu baud[9600])
-2020-01-25 00:47:43.042 | 18241080 | ERROR | pymodbus.client.sync | [Errno 13] could not open port /dev/ttyAMA0: [Errno 13] Permission denied: '/dev/ttyAMA0'
-2020-01-25 00:47:43.043 | 18241081 | ERROR | brokkr.sunsaver | Error reading register data: Cannot connect to device /dev/ttyAMA0
-2020-01-25 00:47:43.044 | 18241082 | INFO | brokkr.sunsaver | Device info: ModbusSerialClient(rtu baud[9600])
-2020-01-25 00:48:43.042 | 18301080 | ERROR | pymodbus.client.sync | [Errno 13] could not open port /dev/ttyAMA0: [Errno 13] Permission denied: '/dev/ttyAMA0'
-2020-01-25 00:48:43.043 | 18301081 | ERROR | brokkr.sunsaver | Error reading register data: Cannot connect to device /dev/ttyAMA0
-2020-01-25 00:48:43.044 | 18301082 | INFO | brokkr.sunsaver | Device info: ModbusSerialClient(rtu baud[9600])
-2020-01-25 00:49:43.042 | 18361080 | ERROR | pymodbus.client.sync | [Errno 13] could not open port /dev/ttyAMA0: [Errno 13] Permission denied: '/dev/ttyAMA0'
-2020-01-25 00:49:43.043 | 18361081 | ERROR | brokkr.sunsaver | Error reading register data: Cannot connect to device /dev/ttyAMA0
-2020-01-25 00:49:43.044 | 18361082 | INFO | brokkr.sunsaver | Device info: ModbusSerialClient(rtu baud[9600])
-2020-01-25 00:50:43.042 | 18421080 | ERROR | pymodbus.client.sync | [Errno 13] could not open port /dev/ttyAMA0: [Errno 13] Permission denied: '/dev/ttyAMA0'
-2020-01-25 00:50:43.043 | 18421082 | ERROR | brokkr.sunsaver | Error reading register data: Cannot connect to device /dev/ttyAMA0
-2020-01-25 00:50:43.044 | 18421082 | INFO | brokkr.sunsaver | Device info: ModbusSerialClient(rtu baud[9600])
+2020-01-25 00:58:43.046 | 18901084 | ERROR | brokkr.sunsaver | Error reading register data: Cannot connect to device /dev/ttyAMA0
+2020-01-25 00:58:43.048 | 18901086 | INFO | brokkr.sunsaver | Device info: ModbusSerialClient(rtu baud[9600])
+2020-01-25 00:59:43.053 | 18961091 | ERROR | brokkr.sunsaver | OSError connecting to charge controller device /dev/ttyUSB0: [Errno 5] Input/output error
+2020-01-25 00:59:43.054 | 18961092 | INFO | brokkr.sunsaver | Details: ModbusSerialClient(rtu baud[9600])
+Traceback (most recent call last):
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 161, in read_raw_sunsaver_data
+    connect_successful = mppt_client.connect()
+  File "/home/thor/dev/brokkrenv/lib/python3.7/site-packages/pymodbus/client/sync.py", line 481, in connect
+    parity=self.parity)
+  File "/usr/lib/python3/dist-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 286, in open
+    self._update_dtr_state()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 634, in _update_dtr_state
+    fcntl.ioctl(self.fd, TIOCMBIS, TIOCM_DTR_str)
+OSError: [Errno 5] Input/output error
+2020-01-25 01:00:43.051 | 19021089 | ERROR | brokkr.sunsaver | OSError connecting to charge controller device /dev/ttyUSB0: [Errno 5] Input/output error
+2020-01-25 01:00:43.052 | 19021090 | INFO | brokkr.sunsaver | Details: ModbusSerialClient(rtu baud[9600])
+Traceback (most recent call last):
+  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 161, in read_raw_sunsaver_data
+    connect_successful = mppt_client.connect()
+  File "/home/thor/dev/brokkrenv/lib/python3.7/site-packages/pymodbus/client/sync.py", line 481, in connect
+    parity=self.parity)
+  File "/usr/lib/python3/dist-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 286, in open
+    self._update_dtr_state()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 634, in _update_dtr_state
+    fcntl.ioctl(self.fd, TIOCMBIS, TIOCM_DTR_str)
+OSError: [Errno 5] Input/output error
