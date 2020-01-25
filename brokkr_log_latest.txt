@@ -1,4 +1,3 @@
-  File "/home/thor/dev/brokkr/src/brokkr/sunsaver.py", line 161, in read_raw_sunsaver_data
     connect_successful = mppt_client.connect()
   File "/home/thor/dev/brokkrenv/lib/python3.7/site-packages/pymodbus/client/sync.py", line 481, in connect
     parity=self.parity)
@@ -28,3 +27,4 @@ Traceback (most recent call last):
 OSError: [Errno 5] Input/output error
 2020-01-25 03:04:36.054 | 2427 | ERROR | brokkr.sunsaver | Error reading register data: Cannot connect to device /dev/ttyUSB0
 2020-01-25 03:04:36.055 | 2427 | INFO | brokkr.sunsaver | Device info: ModbusSerialClient(rtu baud[9600]); Port info: {'device': '/dev/ttyUSB0', 'name': 'ttyUSB0', 'description': 'FT230X Basic UART', 'hwid': 'USB VID:PID=0403:6015 SER=DM00N0H5 LOCATION=1-1.3', 'vid': 1027, 'pid': 24597, 'serial_number': 'DM00N0H5', 'location': '1-1.3', 'manufacturer': 'FTDI', 'product': 'FT230X Basic UART', 'interface': None, 'usb_device_path': '/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.3', 'device_path': '/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.3/1-1.3:1.0/ttyUSB0', 'subsystem': 'usb-serial', 'usb_interface_path': '/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.3/1-1.3:1.0'}
+2020-01-25 03:39:55.497 | 2121869 | INFO | brokkr.startup | Interrupted by signal 15; terminating Brokkr
