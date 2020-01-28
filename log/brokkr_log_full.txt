@@ -394,3 +394,13 @@ OSError: [Errno 5] Input/output error
 2020-01-28 23:36:11.808 | 2881136 | ERROR | brokkr.sunsaver | Error reading Sunsaver data: No serial devices found.
 2020-01-28 23:37:11.804 | 2941132 | ERROR | brokkr.sunsaver | Error reading Sunsaver data: No serial devices found.
 2020-01-28 23:38:11.804 | 3001132 | ERROR | brokkr.sunsaver | Error reading Sunsaver data: No serial devices found.
+2020-01-28 23:39:11.795 | 3061123 | ERROR | brokkr.sunsaver | Error reading Sunsaver data: No serial devices found.
+2020-01-28 23:40:11.808 | 3121136 | ERROR | brokkr.sunsaver | Error reading Sunsaver data: No serial devices found.
+2020-01-28 23:41:11.804 | 3181132 | ERROR | brokkr.sunsaver | Error reading Sunsaver data: No serial devices found.
+2020-01-28 23:42:11.804 | 3241132 | ERROR | brokkr.sunsaver | Error reading Sunsaver data: No serial devices found.
+2020-01-28 23:43:11.808 | 3301136 | ERROR | brokkr.sunsaver | Error reading Sunsaver data: No serial devices found.
+2020-01-28 23:44:11.804 | 3361132 | ERROR | brokkr.sunsaver | Error reading Sunsaver data: No serial devices found.
+2020-01-28 23:45:11.804 | 3421132 | ERROR | brokkr.sunsaver | Error reading Sunsaver data: No serial devices found.
+2020-01-28 23:46:11.808 | 3481136 | ERROR | brokkr.sunsaver | Error reading Sunsaver data: No serial devices found.
+2020-01-28 23:47:11.804 | 3541132 | ERROR | brokkr.sunsaver | Error reading Sunsaver data: No serial devices found.
+2020-01-28 23:48:11.804 | 3601132 | ERROR | brokkr.sunsaver | Error reading Sunsaver data: No serial devices found.
