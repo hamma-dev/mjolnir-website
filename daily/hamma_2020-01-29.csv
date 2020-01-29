@@ -1,0 +1,12 @@
+time,runtime,ping,adc_vb_f,adc_va_f,adc_vl_f,adc_ic_f,adc_il_f,t_hs,t_batt,t_amb,t_rts,charge_state,array_fault,vb_f,vb_ref,ahc_r,ahc_t,kwhc,load_state,load_fault,v_lvd,ahl_r,ahl_t,hourmeter,alarm,dip_switch,led_state,power_out,power_load,power_net,charge_net_24h,sweep_vmp,sweep_pmax,sweep_voc,vb_min_daily,vb_max_daily,ahc_daily,ahl_daily,array_fault_daily,load_fault_daily,alarm_daily,vb_min,vb_max,sensor_uptime,sequence_count,timestamp,crc_errors,crc_errors_delta,crc_errors_hourly,crc_errors_daily,valid_packets,trigger_delta,trigger_rate_1min,trigger_rate_5min,trigger_rate_1hr,bytes_read,bytes_written,bytes_remaining,triggers_remaining,packets_sent,packets_dropped
+2020-01-29 00:24:01.993341,0.0,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-30.863,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2020-01-29 00:25:01.805583,0.02,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-30.817,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2020-01-29 00:26:01.805576,0.03,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-30.77,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2020-01-29 00:27:01.805559,0.05,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-30.723,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2020-01-29 00:28:01.805579,0.07,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-30.677,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2020-01-29 00:29:01.805578,0.08,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-30.63,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2020-01-29 00:30:01.805576,0.1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-30.583,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2020-01-29 00:31:01.805553,0.12,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-30.537,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2020-01-29 00:32:01.805570,0.13,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-30.49,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2020-01-29 00:33:01.805621,0.15,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-30.443,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2020-01-29 00:34:01.805570,0.17,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-30.397,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
