@@ -905,7 +905,7 @@ chargestate: {
                 bgcolor: "white",
                 borderwidth: 0,
                 bordercolor: "black",
-                steps: [ { range: [-1000000000.0, 0.5], color: 'gray' }, { range: [0.5, 1.5], color: 'blue' }, { range: [1.5, 2.5], color: 'maroon' }, { range: [2.5, 3.5], color: 'orange' }, { range: [3.5, 4.5], color: 'red' }, { range: [4.5, 5.5], color: 'yellow' }, { range: [5.5, 6.5], color: 'lime' }, { range: [6.5, 7.5], color: 'green' }, { range: [7.5, 1000000000.0], color: 'teal' },],
+                steps: [ { range: [-1000000000.0, 0.5], color: 'white' }, { range: [0.5, 1.5], color: 'gray' }, { range: [1.5, 2.5], color: 'maroon' }, { range: [2.5, 3.5], color: 'black' }, { range: [3.5, 4.5], color: 'red' }, { range: [4.5, 5.5], color: 'green' }, { range: [5.5, 6.5], color: 'lime' }, { range: [6.5, 7.5], color: 'blue' }, { range: [7.5, 1000000000.0], color: 'teal' },],
                 threshold: {
                     line: { color: "black", width: 4 },
                     thickness: 0.75,
@@ -1445,7 +1445,7 @@ setInterval(updateStatus_status, 10 * 1000);
   <div id="raw-container" class="content-container table-content-container">
   <div id="raw-output" class="content-output table-content-output"></div>
 </div><script>
-var colorMap_raw = {'runtime': [[1, 6, 24, 48], ['red', 'orange', 'yellow', 'lime', 'green']], 'ping': [[-0.5, 0.5], ['red', 'green', 'red']], 'adc_vb_f': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'adc_va_f': [[4, 12, 24, 32], ['red', 'orange', 'yellow', 'lime', 'green']], 'adc_vl_f': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'adc_ic_f': [[0.1, 0.5, 1.0, 2.0], ['red', 'orange', 'yellow', 'lime', 'green']], 'adc_il_f': [[0.1, 0.4, 0.6, 0.7, 1.5, 1.7, 1.8, 1.9], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 't_hs': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 't_batt': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 't_amb': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 't_rts': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'charge_state': [[0.5, 1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5], ['gray', 'blue', 'maroon', 'orange', 'red', 'yellow', 'lime', 'green', 'teal']], 'array_fault': [[-0.5, 0.5], ['red', 'green', 'red']], 'vb_f': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'vb_ref': [[12.5, 12.8, 13.1, 13.9, 14.9, 15.0, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'load_state': [[0.5, 1.5, 2.5, 3.5, 4.5], ['gray', 'green', 'yellow', 'orange', 'red', 'maroon']], 'load_fault': [[-0.5, 0.5], ['red', 'green', 'red']], 'alarm': [[-0.5, 0.5, 500], ['red', 'green', 'lime', 'red']], 'led_state': [[-0.5, 2.5, 6.5, 8.5], ['red', 'gray', 'green', 'yellow', 'red']], 'power_out': [[0.1, 6, 12, 24], ['red', 'orange', 'yellow', 'lime', 'green']], 'power_load': [[1, 6, 9, 10, 15.5, 18, 19, 20, 24], ['red', 'orange', 'yellow', 'lime', 'green', 'teal', 'lime', 'yellow', 'orange', 'red']], 'power_net': [[-15, -5, 0, 15], ['red', 'orange', 'yellow', 'lime', 'green']], 'charge_net_24h': [[-100, -50, 0, 100], ['red', 'orange', 'yellow', 'lime', 'green']], 'sweep_vmp': [[4, 12, 24, 32], ['red', 'orange', 'yellow', 'lime', 'green']], 'sweep_pmax': [[0.1, 6, 12, 24], ['red', 'orange', 'yellow', 'lime', 'green']], 'sweep_voc': [[4, 12, 24, 32], ['red', 'orange', 'yellow', 'lime', 'green']], 'vb_min_daily': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'vb_max_daily': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'array_fault_daily': [[-0.5, 0.5], ['red', 'green', 'red']], 'load_fault_daily': [[-0.5, 0.5], ['red', 'green', 'red']], 'alarm_daily': [[-0.5, 0.5, 500], ['red', 'green', 'lime', 'red']], 'vb_min': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'vb_max': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'sensor_uptime': [[1, 6, 24, 48], ['red', 'orange', 'yellow', 'lime', 'green']], 'crc_errors': [[0.98, 5, 12.5, 50], ['green', 'lime', 'yellow', 'orange', 'red']], 'crc_errors_delta': [[0.1, 0.9, 1.5, 2.5], ['green', 'lime', 'yellow', 'orange', 'red']], 'crc_errors_hourly': [[0.98, 2.5, 4.5, 8.5], ['green', 'lime', 'yellow', 'orange', 'red']], 'crc_errors_daily': [[0.98, 5, 12.5, 50], ['green', 'lime', 'yellow', 'orange', 'red']], 'valid_packets': [[0.5, 1.5, 2.5, 4.5], ['red', 'orange', 'yellow', 'lime', 'green']], 'trigger_rate_1min': [[0.4, 1.4, 3, 6, 15, 30, 49], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'trigger_rate_5min': [[0.4, 1.4, 3, 6, 15, 30, 49], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'trigger_rate_1hr': [[0.4, 1.4, 3, 6, 15, 30, 49], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'bytes_read': [[0.01, 0.03, 0.05, 0.11], ['red', 'orange', 'yellow', 'lime', 'green']], 'bytes_written': [[0.01, 0.03, 0.05, 0.11], ['red', 'orange', 'yellow', 'lime', 'green']], 'bytes_remaining': [[1.3199999999999998, 44.0, 110.0, 220.0], ['red', 'orange', 'yellow', 'lime', 'green']], 'triggers_remaining': [[60, 2000, 5000, 10000], ['red', 'orange', 'yellow', 'lime', 'green']]};
+var colorMap_raw = {'runtime': [[1, 6, 24, 48], ['red', 'orange', 'yellow', 'lime', 'green']], 'ping': [[-0.5, 0.5], ['red', 'green', 'red']], 'adc_vb_f': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'adc_va_f': [[4, 12, 24, 32], ['red', 'orange', 'yellow', 'lime', 'green']], 'adc_vl_f': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'adc_ic_f': [[0.1, 0.5, 1.0, 2.0], ['red', 'orange', 'yellow', 'lime', 'green']], 'adc_il_f': [[0.1, 0.4, 0.6, 0.7, 1.5, 1.7, 1.8, 1.9], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 't_hs': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 't_batt': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 't_amb': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 't_rts': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'charge_state': [[0.5, 1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5], ['white', 'gray', 'maroon', 'black', 'red', 'green', 'lime', 'blue', 'teal']], 'array_fault': [[-0.5, 0.5], ['red', 'green', 'red']], 'vb_f': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'vb_ref': [[12.5, 12.8, 13.1, 13.9, 14.9, 15.0, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'load_state': [[0.5, 1.5, 2.5, 3.5, 4.5], ['gray', 'green', 'yellow', 'orange', 'red', 'maroon']], 'load_fault': [[-0.5, 0.5], ['red', 'green', 'red']], 'alarm': [[-0.5, 0.5, 500], ['red', 'green', 'lime', 'red']], 'led_state': [[-0.5, 2.5, 6.5, 8.5], ['red', 'gray', 'green', 'yellow', 'red']], 'power_out': [[0.1, 6, 12, 24], ['red', 'orange', 'yellow', 'lime', 'green']], 'power_load': [[1, 6, 9, 10, 15.5, 18, 19, 20, 24], ['red', 'orange', 'yellow', 'lime', 'green', 'teal', 'lime', 'yellow', 'orange', 'red']], 'power_net': [[-15, -5, 0, 15], ['red', 'orange', 'yellow', 'lime', 'green']], 'charge_net_24h': [[-100, -50, 0, 100], ['red', 'orange', 'yellow', 'lime', 'green']], 'sweep_vmp': [[4, 12, 24, 32], ['red', 'orange', 'yellow', 'lime', 'green']], 'sweep_pmax': [[0.1, 6, 12, 24], ['red', 'orange', 'yellow', 'lime', 'green']], 'sweep_voc': [[4, 12, 24, 32], ['red', 'orange', 'yellow', 'lime', 'green']], 'vb_min_daily': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'vb_max_daily': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'array_fault_daily': [[-0.5, 0.5], ['red', 'green', 'red']], 'load_fault_daily': [[-0.5, 0.5], ['red', 'green', 'red']], 'alarm_daily': [[-0.5, 0.5, 500], ['red', 'green', 'lime', 'red']], 'vb_min': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'vb_max': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'sensor_uptime': [[1, 6, 24, 48], ['red', 'orange', 'yellow', 'lime', 'green']], 'crc_errors': [[0.98, 5, 12.5, 50], ['green', 'lime', 'yellow', 'orange', 'red']], 'crc_errors_delta': [[0.1, 0.9, 1.5, 2.5], ['green', 'lime', 'yellow', 'orange', 'red']], 'crc_errors_hourly': [[0.98, 2.5, 4.5, 8.5], ['green', 'lime', 'yellow', 'orange', 'red']], 'crc_errors_daily': [[0.98, 5, 12.5, 50], ['green', 'lime', 'yellow', 'orange', 'red']], 'valid_packets': [[0.5, 1.5, 2.5, 4.5], ['red', 'orange', 'yellow', 'lime', 'green']], 'trigger_rate_1min': [[0.4, 1.4, 3, 6, 15, 30, 49], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'trigger_rate_5min': [[0.4, 1.4, 3, 6, 15, 30, 49], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'trigger_rate_1hr': [[0.4, 1.4, 3, 6, 15, 30, 49], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'bytes_read': [[0.01, 0.03, 0.05, 0.11], ['red', 'orange', 'yellow', 'lime', 'green']], 'bytes_written': [[0.01, 0.03, 0.05, 0.11], ['red', 'orange', 'yellow', 'lime', 'green']], 'bytes_remaining': [[1.3199999999999998, 44.0, 110.0, 220.0], ['red', 'orange', 'yellow', 'lime', 'green']], 'triggers_remaining': [[60, 2000, 5000, 10000], ['red', 'orange', 'yellow', 'lime', 'green']]};
 
 function getColor_raw(dataValue) {
     if (dataValue.row == dataValue.value) {
@@ -2685,7 +2685,7 @@ yaxis16: {
 
 {
     type: "rect",
-    fillcolor: "gray",
+    fillcolor: "white",
     layer: "below",
     line: { width: 0 },
     opacity: 0.2,
@@ -2701,7 +2701,7 @@ yaxis16: {
 
 {
     type: "rect",
-    fillcolor: "blue",
+    fillcolor: "gray",
     layer: "below",
     line: { width: 0 },
     opacity: 0.2,
@@ -2733,7 +2733,7 @@ yaxis16: {
 
 {
     type: "rect",
-    fillcolor: "orange",
+    fillcolor: "black",
     layer: "below",
     line: { width: 0 },
     opacity: 0.2,
@@ -2765,7 +2765,7 @@ yaxis16: {
 
 {
     type: "rect",
-    fillcolor: "yellow",
+    fillcolor: "green",
     layer: "below",
     line: { width: 0 },
     opacity: 0.2,
@@ -2797,7 +2797,7 @@ yaxis16: {
 
 {
     type: "rect",
-    fillcolor: "green",
+    fillcolor: "blue",
     layer: "below",
     line: { width: 0 },
     opacity: 0.2,
@@ -4096,7 +4096,7 @@ setInterval(updateStatus_archive, 300 * 1000);
               <br><a href="https://github.com/SteveLane/hugo-icon" target="_blank" rel="noopener noreferrer">Hugo port</a> by <a href="https://github.com/SteveLane/" target="_blank" rel="noopener noreferrer">SteveLane</a> <span class="pipe-colored">|</span> <a href="https://github.com/spyder-ide/lektor-icon" target="_blank" rel="noopener noreferrer">Lektor&nbsp;port</a>&nbsp;by&nbsp;<a href="https://github.com/dalthviz/" target="_blank" rel="noopener noreferrer">Dalthviz</a>
               <br>Theme rewritten and maintained by <a href="http://gerlach.cam" target="_blank" rel="noopener noreferrer">C.A.M.&nbsp;Gerlach</a>
               
-              <br><a href='https://github.com/hamma-dev/sindri' target='_blank' rel='noopener noreferrer'>Sindri</a>&nbsp;0.2.5 <span class='pipe-colored'>|</span> <a href='https://www.getlektor.com/' target='_blank' rel='noopener noreferrer'>Lektor</a>&nbsp;3.1.3 <span class='pipe-colored'>|</span> <a href='https://spyder-ide.github.io/lektor-icon/' target='_blank' rel='noopener noreferrer'>Lektor&#8209;Icon</a>&nbsp;2.0.0.dev0<br>Site Build Timestamp: 2020-01-29 00:24:55.012871 UTC
+              <br><a href='https://github.com/hamma-dev/sindri' target='_blank' rel='noopener noreferrer'>Sindri</a>&nbsp;0.2.7 <span class='pipe-colored'>|</span> <a href='https://www.getlektor.com/' target='_blank' rel='noopener noreferrer'>Lektor</a>&nbsp;3.1.3 <span class='pipe-colored'>|</span> <a href='https://spyder-ide.github.io/lektor-icon/' target='_blank' rel='noopener noreferrer'>Lektor&#8209;Icon</a>&nbsp;2.0.0.dev0<br>Site Build Timestamp: 2020-05-05 19:13:44.969261 UTC
               
             </p>
           </div>
