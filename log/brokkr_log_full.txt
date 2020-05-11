@@ -12426,3 +12426,483 @@ Traceback (most recent call last):
 pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3622090 ms)
 2020-05-11 16:01:12.959 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb551cb10>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb551c650>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589212872.953547, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3622090 ms)
 2020-05-11 16:01:12.959 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3622091 ms)
+2020-05-11 16:01:22.957 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3632089 ms)
+2020-05-11 16:01:22.957 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3632089 ms)
+2020-05-11 16:01:22.958 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb551cd50>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb551c9f0>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589212882.952734, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3632090 ms)
+2020-05-11 16:01:22.958 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3632090 ms)
+2020-05-11 16:01:32.960 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3642092 ms)
+2020-05-11 16:01:32.960 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3642092 ms)
+2020-05-11 16:01:32.961 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb55701f0>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5570510>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589212892.955936, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3642093 ms)
+2020-05-11 16:01:32.961 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3642093 ms)
+2020-05-11 16:01:42.959 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3652091 ms)
+2020-05-11 16:01:42.959 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3652091 ms)
+2020-05-11 16:01:42.960 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5570850>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5570730>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589212902.954911, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3652092 ms)
+2020-05-11 16:01:42.960 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3652092 ms)
+2020-05-11 16:01:52.958 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3662090 ms)
+2020-05-11 16:01:52.959 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3662090 ms)
+2020-05-11 16:01:52.960 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5565fd0>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5565f10>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589212912.954237, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3662092 ms)
+2020-05-11 16:01:52.960 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3662092 ms)
+2020-05-11 16:02:02.958 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3672090 ms)
+2020-05-11 16:02:02.959 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3672090 ms)
+2020-05-11 16:02:02.960 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5570910>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5570c70>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589212922.954484, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3672092 ms)
+2020-05-11 16:02:02.960 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3672092 ms)
+2020-05-11 16:02:12.957 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3682089 ms)
+2020-05-11 16:02:12.958 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3682089 ms)
+2020-05-11 16:02:12.958 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5570bd0>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5570d50>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589212932.953184, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3682090 ms)
+2020-05-11 16:02:12.959 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3682090 ms)
+2020-05-11 16:02:22.959 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3692090 ms)
+2020-05-11 16:02:22.959 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3692091 ms)
+2020-05-11 16:02:22.962 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb551c270>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb551c230>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589212942.954281, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3692094 ms)
+2020-05-11 16:02:22.962 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3692094 ms)
+2020-05-11 16:02:32.957 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3702089 ms)
+2020-05-11 16:02:32.958 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3702090 ms)
+2020-05-11 16:02:32.958 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb551c310>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb551cef0>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589212952.953624, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3702090 ms)
+2020-05-11 16:02:32.959 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3702090 ms)
+2020-05-11 16:02:42.959 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3712091 ms)
+2020-05-11 16:02:42.959 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3712091 ms)
+2020-05-11 16:02:42.962 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5565a50>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb551ccb0>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589212962.954612, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3712094 ms)
+2020-05-11 16:02:42.962 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3712094 ms)
+2020-05-11 16:02:52.962 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3722094 ms)
+2020-05-11 16:02:52.962 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3722094 ms)
+2020-05-11 16:02:52.965 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5565c10>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5565810>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589212972.957945, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3722097 ms)
+2020-05-11 16:02:52.965 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3722097 ms)
+2020-05-11 16:03:02.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3732103 ms)
+2020-05-11 16:03:02.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3732103 ms)
+2020-05-11 16:03:02.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb551c070>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb551c810>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589212982.967325, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3732104 ms)
+2020-05-11 16:03:02.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3732105 ms)
+2020-05-11 16:03:12.970 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3742102 ms)
+2020-05-11 16:03:12.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3742103 ms)
+2020-05-11 16:03:12.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb551cb50>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb551cdd0>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589212992.966456, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3742104 ms)
+2020-05-11 16:03:12.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3742104 ms)
+2020-05-11 16:03:22.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3752103 ms)
+2020-05-11 16:03:22.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3752104 ms)
+2020-05-11 16:03:22.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5570150>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb55707f0>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213002.967592, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3752105 ms)
+2020-05-11 16:03:22.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3752105 ms)
+2020-05-11 16:03:32.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3762102 ms)
+2020-05-11 16:03:32.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3762103 ms)
+2020-05-11 16:03:32.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5570650>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5570110>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213012.966484, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3762104 ms)
+2020-05-11 16:03:32.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3762105 ms)
+2020-05-11 16:03:42.972 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3772103 ms)
+2020-05-11 16:03:42.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3772104 ms)
+2020-05-11 16:03:42.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5570a10>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5570b50>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213022.967784, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3772105 ms)
+2020-05-11 16:03:42.974 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3772105 ms)
+2020-05-11 16:03:52.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3782102 ms)
+2020-05-11 16:03:52.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3782103 ms)
+2020-05-11 16:03:52.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5570af0>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5570ef0>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213032.96689, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3782104 ms)
+2020-05-11 16:03:52.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3782105 ms)
+2020-05-11 16:04:02.970 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3792102 ms)
+2020-05-11 16:04:02.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3792102 ms)
+2020-05-11 16:04:02.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb551cc90>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb551cd10>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213042.966015, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3792103 ms)
+2020-05-11 16:04:02.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3792104 ms)
+2020-05-11 16:04:12.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3802103 ms)
+2020-05-11 16:04:12.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3802103 ms)
+2020-05-11 16:04:12.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb551ce90>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb551cf30>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213052.967133, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3802104 ms)
+2020-05-11 16:04:12.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3802105 ms)
+2020-05-11 16:04:22.970 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3812102 ms)
+2020-05-11 16:04:22.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3812102 ms)
+2020-05-11 16:04:22.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5565910>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5565750>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213062.966213, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3812104 ms)
+2020-05-11 16:04:22.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3812104 ms)
+2020-05-11 16:04:32.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3822103 ms)
+2020-05-11 16:04:32.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3822104 ms)
+2020-05-11 16:04:32.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5565670>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5565970>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213072.967231, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3822105 ms)
+2020-05-11 16:04:32.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3822105 ms)
+2020-05-11 16:04:42.970 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3832102 ms)
+2020-05-11 16:04:42.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3832103 ms)
+2020-05-11 16:04:42.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb551cdf0>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb551c590>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213082.966388, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3832104 ms)
+2020-05-11 16:04:42.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3832104 ms)
+2020-05-11 16:04:52.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3842103 ms)
+2020-05-11 16:04:52.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3842104 ms)
+2020-05-11 16:04:52.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb551c050>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb551c5b0>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213092.9675, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3842105 ms)
+2020-05-11 16:04:52.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3842105 ms)
+2020-05-11 16:05:02.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3852102 ms)
+2020-05-11 16:05:02.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3852103 ms)
+2020-05-11 16:05:02.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5570470>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5570350>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213102.96663, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3852104 ms)
+2020-05-11 16:05:02.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3852104 ms)
+2020-05-11 16:05:12.969 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3862101 ms)
+2020-05-11 16:05:12.970 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3862102 ms)
+2020-05-11 16:05:12.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5570650>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5570710>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213112.965608, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3862103 ms)
+2020-05-11 16:05:12.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3862103 ms)
+2020-05-11 16:05:22.970 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3872102 ms)
+2020-05-11 16:05:22.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3872103 ms)
+2020-05-11 16:05:22.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5570530>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5570130>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213122.966691, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3872104 ms)
+2020-05-11 16:05:22.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3872104 ms)
+2020-05-11 16:05:32.970 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3882101 ms)
+2020-05-11 16:05:32.970 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3882102 ms)
+2020-05-11 16:05:32.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb55700b0>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5570f10>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213132.965838, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3882103 ms)
+2020-05-11 16:05:32.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3882104 ms)
+2020-05-11 16:05:42.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3892103 ms)
+2020-05-11 16:05:42.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3892103 ms)
+2020-05-11 16:05:42.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb551c3b0>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb551cdb0>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213142.966933, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3892104 ms)
+2020-05-11 16:05:42.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3892105 ms)
+2020-05-11 16:05:52.970 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3902102 ms)
+2020-05-11 16:05:52.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3902102 ms)
+2020-05-11 16:05:52.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb551c0f0>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb551c210>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213152.966032, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3902103 ms)
+2020-05-11 16:05:52.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3902104 ms)
+2020-05-11 16:06:02.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3912103 ms)
+2020-05-11 16:06:02.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3912103 ms)
+2020-05-11 16:06:02.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5565e90>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5565e10>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213162.967121, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3912104 ms)
+2020-05-11 16:06:02.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3912105 ms)
+2020-05-11 16:06:12.970 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3922102 ms)
+2020-05-11 16:06:12.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3922103 ms)
+2020-05-11 16:06:12.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5565d10>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5565f10>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213172.966075, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3922104 ms)
+2020-05-11 16:06:12.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3922104 ms)
+2020-05-11 16:06:22.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3932103 ms)
+2020-05-11 16:06:22.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3932104 ms)
+2020-05-11 16:06:22.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb551c890>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb551c550>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213182.967413, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3932105 ms)
+2020-05-11 16:06:22.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3932105 ms)
+2020-05-11 16:06:32.970 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3942102 ms)
+2020-05-11 16:06:32.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3942103 ms)
+2020-05-11 16:06:32.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb551cb10>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb551c490>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213192.966519, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3942104 ms)
+2020-05-11 16:06:32.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3942104 ms)
+2020-05-11 16:06:42.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3952103 ms)
+2020-05-11 16:06:42.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3952104 ms)
+2020-05-11 16:06:42.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb55706b0>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5570bb0>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213202.967633, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3952105 ms)
+2020-05-11 16:06:42.974 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3952105 ms)
+2020-05-11 16:06:52.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3962102 ms)
+2020-05-11 16:06:52.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3962103 ms)
+2020-05-11 16:06:52.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb55706f0>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb55708d0>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213212.966726, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3962104 ms)
+2020-05-11 16:06:52.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3962105 ms)
+2020-05-11 16:07:02.970 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3972101 ms)
+2020-05-11 16:07:02.970 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3972102 ms)
+2020-05-11 16:07:02.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5570190>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb55705f0>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213222.965836, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3972103 ms)
+2020-05-11 16:07:02.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3972104 ms)
+2020-05-11 16:07:12.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3982103 ms)
+2020-05-11 16:07:12.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3982103 ms)
+2020-05-11 16:07:12.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5570670>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5570230>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213232.966948, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3982104 ms)
+2020-05-11 16:07:12.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3982105 ms)
+2020-05-11 16:07:22.970 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3992102 ms)
+2020-05-11 16:07:22.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+3992102 ms)
+2020-05-11 16:07:22.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb551c690>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb551c350>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213242.966081, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+3992104 ms)
+2020-05-11 16:07:22.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+3992104 ms)
+2020-05-11 16:07:32.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4002103 ms)
+2020-05-11 16:07:32.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4002103 ms)
+2020-05-11 16:07:32.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb551c810>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb551cad0>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213252.967194, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+4002104 ms)
+2020-05-11 16:07:32.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+4002105 ms)
+2020-05-11 16:07:42.970 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4012102 ms)
+2020-05-11 16:07:42.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4012103 ms)
+2020-05-11 16:07:42.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5565cb0>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5565d70>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213262.966253, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+4012104 ms)
+2020-05-11 16:07:42.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+4012104 ms)
+2020-05-11 16:07:52.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4022103 ms)
+2020-05-11 16:07:52.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4022104 ms)
+2020-05-11 16:07:52.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb55658f0>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5565db0>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213272.967368, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+4022105 ms)
+2020-05-11 16:07:52.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+4022105 ms)
+2020-05-11 16:08:02.970 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4032102 ms)
+2020-05-11 16:08:02.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4032103 ms)
+2020-05-11 16:08:02.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb551c330>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb551ce10>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213282.966502, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+4032104 ms)
+2020-05-11 16:08:02.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+4032104 ms)
+2020-05-11 16:08:12.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4042103 ms)
+2020-05-11 16:08:12.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4042104 ms)
+2020-05-11 16:08:12.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb551c2b0>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb551c030>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213292.967607, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+4042105 ms)
+2020-05-11 16:08:12.974 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+4042105 ms)
+2020-05-11 16:08:22.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4052102 ms)
+2020-05-11 16:08:22.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4052103 ms)
+2020-05-11 16:08:22.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5570eb0>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5570bf0>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213302.966745, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+4052104 ms)
+2020-05-11 16:08:22.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+4052104 ms)
+2020-05-11 16:08:32.970 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4062101 ms)
+2020-05-11 16:08:32.970 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4062102 ms)
+2020-05-11 16:08:32.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5570490>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb55707d0>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213312.965701, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+4062103 ms)
+2020-05-11 16:08:32.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+4062104 ms)
+2020-05-11 16:08:42.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4072103 ms)
+2020-05-11 16:08:42.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4072103 ms)
+2020-05-11 16:08:42.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5570df0>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5570510>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213322.966889, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+4072105 ms)
+2020-05-11 16:08:42.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+4072105 ms)
+2020-05-11 16:08:52.970 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4082101 ms)
+2020-05-11 16:08:52.970 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4082102 ms)
+2020-05-11 16:08:52.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb55705d0>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5570f30>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213332.965937, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+4082103 ms)
+2020-05-11 16:08:52.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+4082104 ms)
+2020-05-11 16:09:02.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4092102 ms)
+2020-05-11 16:09:02.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4092103 ms)
+2020-05-11 16:09:02.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5565670>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5565c90>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213342.96693, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+4092104 ms)
+2020-05-11 16:09:02.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+4092105 ms)
+2020-05-11 16:09:12.970 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4102102 ms)
+2020-05-11 16:09:12.970 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4102102 ms)
+2020-05-11 16:09:12.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5510350>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb55109d0>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213352.96588, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+4102103 ms)
+2020-05-11 16:09:12.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+4102104 ms)
+2020-05-11 16:09:22.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4112102 ms)
+2020-05-11 16:09:22.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4112103 ms)
+2020-05-11 16:09:22.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5565a50>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb65fe6d0>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213362.966858, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+4112104 ms)
+2020-05-11 16:09:22.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+4112105 ms)
+2020-05-11 16:09:32.970 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4122102 ms)
+2020-05-11 16:09:32.970 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4122102 ms)
+2020-05-11 16:09:32.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5570070>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5570850>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213372.965932, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+4122103 ms)
+2020-05-11 16:09:32.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+4122104 ms)
+2020-05-11 16:09:42.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4132103 ms)
+2020-05-11 16:09:42.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4132103 ms)
+2020-05-11 16:09:42.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5570fd0>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5570d30>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213382.966958, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+4132104 ms)
+2020-05-11 16:09:42.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+4132105 ms)
+2020-05-11 16:09:52.970 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4142102 ms)
+2020-05-11 16:09:52.970 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4142102 ms)
+2020-05-11 16:09:52.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb55108d0>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5510070>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213392.965975, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+4142103 ms)
+2020-05-11 16:09:52.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+4142104 ms)
+2020-05-11 16:10:02.969 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4152101 ms)
+2020-05-11 16:10:02.970 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4152101 ms)
+2020-05-11 16:10:02.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5510b90>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5510910>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213402.964821, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+4152102 ms)
+2020-05-11 16:10:02.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+4152103 ms)
+2020-05-11 16:10:12.970 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4162102 ms)
+2020-05-11 16:10:12.970 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4162102 ms)
+2020-05-11 16:10:12.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5510af0>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5510fd0>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213412.965989, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+4162103 ms)
+2020-05-11 16:10:12.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+4162104 ms)
+2020-05-11 16:10:22.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4172103 ms)
+2020-05-11 16:10:22.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4172103 ms)
+2020-05-11 16:10:22.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5510530>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5510790>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213422.967, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+4172104 ms)
+2020-05-11 16:10:22.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+4172105 ms)
+2020-05-11 16:10:32.970 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4182102 ms)
+2020-05-11 16:10:32.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4182102 ms)
+2020-05-11 16:10:32.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb55709d0>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5570230>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213432.965886, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+4182103 ms)
+2020-05-11 16:10:32.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+4182104 ms)
+2020-05-11 16:10:42.971 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4192103 ms)
+2020-05-11 16:10:42.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4192103 ms)
+2020-05-11 16:10:42.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5570090>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5570130>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213442.966906, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+4192104 ms)
+2020-05-11 16:10:42.973 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+4192105 ms)
+2020-05-11 16:10:52.970 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4202102 ms)
+2020-05-11 16:10:52.971 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4202102 ms)
+2020-05-11 16:10:52.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5565810>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb5565870>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213452.966049, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+4202103 ms)
+2020-05-11 16:10:52.972 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+4202104 ms)
+2020-05-11 16:11:02.959 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4212090 ms)
+2020-05-11 16:11:02.959 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4212091 ms)
+2020-05-11 16:11:02.960 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5565f10>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb55658b0>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213462.954544, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+4212091 ms)
+2020-05-11 16:11:02.960 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+4212092 ms)
+2020-05-11 16:11:12.958 | ERROR | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | ModbusIOException reading Modbus data for None: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4222090 ms)
+2020-05-11 16:11:12.958 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/inputs/modbus.py", line 89, in _get_responce_data
+    raise responce_data
+pymodbus.exceptions.ModbusIOException: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received) (T+4222090 ms)
+2020-05-11 16:11:12.959 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Client details: {'method': 'rtu', 'socket': None, 'framer': <pymodbus.framer.rtu_framer.ModbusRtuFramer object at 0xb5570ad0>, 'transaction': <pymodbus.transaction.DictTransactionManager object at 0xb55707f0>, '_debug': False, '_debugfd': None, 'broadcast_enable': False, 'port': '/dev/ttyUSB0', 'stopbits': 2, 'bytesize': 8, 'parity': 'N', 'baudrate': 9600, 'timeout': 2, '_strict': False, 'last_frame_end': 1589213472.953647, '_t0': 0.0011458333333333333, 'inter_char_timeout': 0.00171875, 'silent_interval': 0.00401, 'state': 6} (T+4222091 ms)
+2020-05-11 16:11:12.959 | INFO | Telemetry Process | brokkr.inputs.modbus.ModbusSerialInput | Port details: None (T+4222091 ms)
