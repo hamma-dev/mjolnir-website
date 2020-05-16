@@ -156,19 +156,19 @@
 
 
 
-<a class="nav-link-section" href="#section-raw" data-nav-section="raw">Data</a>
-
-
-
 <a class="nav-link-section" href="#section-plot" data-nav-section="plot">Plots</a>
 
 
 
-<a class="nav-link-section" href="#section-log" data-nav-section="log">Log</a>
+<a class="nav-link-section" href="#section-raw" data-nav-section="raw">Data</a>
 
 
 
 <a class="nav-link-section" href="#section-archive" data-nav-section="archive">Archive</a>
+
+
+
+<a class="nav-link-section" href="#section-log" data-nav-section="log">Log</a>
 
 
 
@@ -308,10 +308,10 @@
       <div class="card-inner">
         
         <div class="widget-content">
-          <div id="chargestate" class="widget-container"></div>
+          <div id="ledstate" class="widget-container"></div>
         </div>
         
-        <h3>Charge State</h3>
+        <h3>LED State</h3>
         
       </div>
       <div class="card-spacer"></div>
@@ -877,7 +877,7 @@ if (! foundStep) {
 
 
 
-chargestate: {
+ledstate: {
     data: [
         {
             domain: { x: [0, 1], y: [0, 1] },
@@ -894,8 +894,8 @@ chargestate: {
                     automargin: true,
                     autotick: false,
                     color: "white",
-                    dtick: 1,
-                    range: [0, 8],
+                    dtick: 5,
+                    range: [0, 20],
                     tick0: 0,
                     ticksuffix: "",
                     tickangle: 0,
@@ -905,7 +905,7 @@ chargestate: {
                 bgcolor: "white",
                 borderwidth: 0,
                 bordercolor: "black",
-                steps: [ { range: [-1000000000.0, 0.5], color: 'white' }, { range: [0.5, 1.5], color: 'gray' }, { range: [1.5, 2.5], color: 'maroon' }, { range: [2.5, 3.5], color: 'black' }, { range: [3.5, 4.5], color: 'red' }, { range: [4.5, 5.5], color: 'green' }, { range: [5.5, 6.5], color: 'lime' }, { range: [6.5, 7.5], color: 'blue' }, { range: [7.5, 1000000000.0], color: 'teal' },],
+                steps: [ { range: [-1000000000.0, -0.5], color: 'red' }, { range: [-0.5, 2.5], color: 'gray' }, { range: [2.5, 6.5], color: 'green' }, { range: [6.5, 8.5], color: 'yellow' }, { range: [8.5, 11.5], color: 'red' }, { range: [11.5, 1000000000.0], color: 'maroon' },],
                 threshold: {
                     line: { color: "black", width: 4 },
                     thickness: 0.75,
@@ -983,7 +983,7 @@ loadpower: {
                 bgcolor: "white",
                 borderwidth: 0,
                 bordercolor: "black",
-                steps: [ { range: [-1000000000.0, 1], color: 'white' }, { range: [1, 5], color: 'red' }, { range: [5, 10], color: 'yellow' }, { range: [10, 20], color: 'red' }, { range: [20, 25], color: 'green' }, { range: [25, 27], color: 'orange' }, { range: [27, 1000000000.0], color: 'red' },],
+                steps: [ { range: [-1000000000.0, 1], color: 'black' }, { range: [1, 5], color: 'orange' }, { range: [5, 11], color: 'yellow' }, { range: [11, 23], color: 'gray' }, { range: [23, 26], color: 'green' }, { range: [26, 28], color: 'orange' }, { range: [28, 1000000000.0], color: 'red' },],
                 threshold: {
                     line: { color: "black", width: 4 },
                     thickness: 0.75,
@@ -1423,141 +1423,7 @@ setInterval(updateStatus_status, 10 * 1000);
 
 
 
-<div id="section-raw" data-section="raw" class="content-section body-section light-bg-section">
-  
-  
-  <div class="text-center fh5co-heading">
-    <h2>Raw Output Data</h2>
-    <p>Raw current and 24-hour max/mean/min Brokkr output data, updated dynamically every 10 s.</p>
-
-  </div>
-  
-
-
-<div class="row">
-  
-  <a id="raw-button" href="daily" class="content-button text-button" >View Full Daily Data</a>
-  
-</div>
-
-
-<div class="center full-width">
-  <div id="raw-container" class="content-container table-content-container">
-  <div id="raw-output" class="content-output table-content-output"></div>
-</div><script>
-var colorMap_raw = {'runtime': [[1, 6, 24, 48], ['red', 'orange', 'yellow', 'lime', 'green']], 'ping': [[-0.5, 0.5], ['red', 'green', 'red']], 'adc_vb_f': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'adc_va_f': [[4, 12, 24, 32], ['red', 'orange', 'yellow', 'lime', 'green']], 'adc_vl_f': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'adc_ic_f': [[0.1, 0.5, 1.0, 2.0], ['red', 'orange', 'yellow', 'lime', 'green']], 'adc_il_f': [[0.1, 0.4, 0.6, 0.7, 1.5, 1.7, 1.8, 1.9], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 't_hs': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 't_batt': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 't_amb': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 't_rts': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'charge_state': [[0.5, 1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5], ['white', 'gray', 'maroon', 'black', 'red', 'green', 'lime', 'blue', 'teal']], 'array_fault': [[-0.5, 0.5], ['red', 'green', 'red']], 'vb_f': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'vb_ref': [[12.5, 12.8, 13.1, 13.9, 14.9, 15.0, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'load_state': [[0.5, 1.5, 2.5, 3.5, 4.5], ['gray', 'green', 'yellow', 'orange', 'red', 'maroon']], 'load_fault': [[-0.5, 0.5], ['red', 'green', 'red']], 'alarm': [[-0.5, 0.5, 500], ['red', 'green', 'lime', 'red']], 'led_state': [[-0.5, 2.5, 6.5, 8.5], ['red', 'gray', 'green', 'yellow', 'red']], 'power_out': [[0.1, 6, 12, 24], ['red', 'orange', 'yellow', 'lime', 'green']], 'power_load': [[1, 5, 10, 20, 25, 27], ['white', 'red', 'yellow', 'red', 'green', 'orange', 'red']], 'power_net': [[-15, -5, 0, 15], ['red', 'orange', 'yellow', 'lime', 'green']], 'charge_net_24h': [[-100, -50, 0, 100], ['red', 'orange', 'yellow', 'lime', 'green']], 'sweep_vmp': [[4, 12, 24, 32], ['red', 'orange', 'yellow', 'lime', 'green']], 'sweep_pmax': [[0.1, 6, 12, 24], ['red', 'orange', 'yellow', 'lime', 'green']], 'sweep_voc': [[4, 12, 24, 32], ['red', 'orange', 'yellow', 'lime', 'green']], 'vb_min_daily': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'vb_max_daily': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'array_fault_daily': [[-0.5, 0.5], ['red', 'green', 'red']], 'load_fault_daily': [[-0.5, 0.5], ['red', 'green', 'red']], 'alarm_daily': [[-0.5, 0.5, 500], ['red', 'green', 'lime', 'red']], 'vb_min': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'vb_max': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'sensor_uptime': [[1, 6, 24, 48], ['red', 'orange', 'yellow', 'lime', 'green']], 'crc_errors': [[0.98, 5, 12.5, 50], ['green', 'lime', 'yellow', 'orange', 'red']], 'crc_errors_delta': [[0.1, 0.9, 1.5, 2.5], ['green', 'lime', 'yellow', 'orange', 'red']], 'crc_errors_hourly': [[0.98, 2.5, 4.5, 8.5], ['green', 'lime', 'yellow', 'orange', 'red']], 'crc_errors_daily': [[0.98, 5, 12.5, 50], ['green', 'lime', 'yellow', 'orange', 'red']], 'valid_packets': [[0.5, 1.5, 2.5, 4.5], ['red', 'orange', 'yellow', 'lime', 'green']], 'trigger_rate_1min': [[0.4, 1.4, 3, 6, 15, 30, 49], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'trigger_rate_5min': [[0.4, 1.4, 3, 6, 15, 30, 49], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'trigger_rate_1hr': [[0.4, 1.4, 3, 6, 15, 30, 49], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'bytes_read': [[0.01, 0.03, 0.05, 0.11], ['red', 'orange', 'yellow', 'lime', 'green']], 'bytes_written': [[0.01, 0.03, 0.05, 0.11], ['red', 'orange', 'yellow', 'lime', 'green']], 'bytes_remaining': [[1.3199999999999998, 44.0, 110.0, 220.0], ['red', 'orange', 'yellow', 'lime', 'green']], 'triggers_remaining': [[60, 2000, 5000, 10000], ['red', 'orange', 'yellow', 'lime', 'green']]};
-
-function getColor_raw(dataValue) {
-    if (dataValue.row == dataValue.value) {
-        return "table-cell-header";
-    };
-    if (dataValue.value == null) {
-        return "table-cell-null";
-    };
-    if (! colorMap_raw.hasOwnProperty(dataValue.row)) {
-        return "table-cell-nocolor";
-    };
-    var colorScale = Plotly.d3.scale.threshold()
-    .domain(colorMap_raw[dataValue.row][0])
-    .range(colorMap_raw[dataValue.row][1]);
-    return "table-cell-" + colorScale(dataValue.value);
-};
-
-var lastUpdate_raw = null;
-var columns_raw = ['Variable', 'Now', 'Min', 'Max', 'Avg'];
-
-var dataTable_raw = Plotly.d3.select("#raw-output").append("table");
-var tableHeader_raw = dataTable_raw.append("thead");
-var tableBody_raw = dataTable_raw.append("tbody");
-
-function createTableElement(dataValue) {
-    if (dataValue.row == dataValue.value) {
-        return document.createElement("th");
-    };
-    return document.createElement("td");
-};
-
-var enableQueryParsing = enableQueryParsing || false;
-
-var xhrCheck_raw = new XMLHttpRequest();
-xhrCheck_raw.onreadystatechange = function() {
-    if (this.readyState == XMLHttpRequest.DONE && this.status < 300 && this.status >= 200) {
-        var lastUpdateData = JSON.parse(this.responseText);
-        var currentUpdate = new Date(lastUpdateData.lastUpdate);
-        if (lastUpdate_raw == null || lastUpdate_raw.getTime() != currentUpdate.getTime()) {
-            lastUpdate_raw = currentUpdate;
-            if (enableQueryParsing) {
-                queryParams = parseQueryParams();
-                var extraPathText = queryParams["date"];
-                dataPath = "raw_data" + extraPathText + ".json";
-                document.getElementById("raw-button").href = dataPath;
-            } else {
-                dataPath = "raw_data" + ".json";
-                extraPathText = dataPath;
-            };
-            Plotly.d3.json(dataPath, function(error, data) {
-                if (false && (error || ! data || data.length < 2 ||  Object.values(Plotly.d3.values(data)[0])[0] == "")) {
-                    window.alert("Data for " + extraPathText + " not available.");
-                    return;
-                };
-                tableHeader_raw.selectAll("*").remove();
-                tableBody_raw.selectAll("*").remove();
-                if ((! columns_raw) || (columns_raw.length < 1)) {
-                    columns_raw = Object.keys(Plotly.d3.values(data)[0]);
-                };
-
-                tableHeader_raw.append("tr")
-                    .selectAll("th")
-                    .data(columns_raw)
-                    .enter()
-                    .append("th")
-                    .text(function (column) { return column; });
-
-                var rows = tableBody_raw.selectAll("tr")
-                    .data(data)
-                    .enter()
-                    .append("tr")
-
-                var cells = rows.selectAll("td")
-                    .data(function (row) {
-                        return columns_raw.map(function (column) {
-                            return {column: column, row: row[columns_raw[0]], value: row[column]};
-                        });
-                    })
-                    .enter()
-                    .append(createTableElement)
-                    .attr("class", getColor_raw)
-                    .html(function (d) { return d.value; });
-            });
-        };
-    };
-};
-
-function updateStatus_raw(event) {
-    event = event || false;
-    if (event) {
-        lastUpdate_raw = null;
-    }
-    xhrCheck_raw.open("GET", "raw_lastupdate.json", true);
-    xhrCheck_raw.send();
-};
-updateStatus_raw();
-
-if (enableQueryParsing) {
-    window.addEventListener("popstate", updateStatus_raw);
-}
-setInterval(updateStatus_raw, 10 * 1000);
-</script>
-</div>
-
-</div> <!-- END content-section -->
-
-
-
-
-
-
-<div id="section-plot" data-section="plot" class="content-section body-section dark-bg-section">
+<div id="section-plot" data-section="plot" class="content-section body-section light-bg-section">
   
   
   <div class="text-center fh5co-heading">
@@ -2829,7 +2695,7 @@ yaxis16: {
 
 {
     type: "rect",
-    fillcolor: "white",
+    fillcolor: "black",
     layer: "below",
     line: { width: 0 },
     opacity: 0.2,
@@ -2845,7 +2711,7 @@ yaxis16: {
 
 {
     type: "rect",
-    fillcolor: "red",
+    fillcolor: "orange",
     layer: "below",
     line: { width: 0 },
     opacity: 0.2,
@@ -2870,14 +2736,14 @@ yaxis16: {
     x1: 1,
     yref: "y7",
     y0: 5,
-    y1: 10,
+    y1: 11,
 },
 
 
 
 {
     type: "rect",
-    fillcolor: "red",
+    fillcolor: "gray",
     layer: "below",
     line: { width: 0 },
     opacity: 0.2,
@@ -2885,8 +2751,8 @@ yaxis16: {
     x0: 0,
     x1: 1,
     yref: "y7",
-    y0: 10,
-    y1: 20,
+    y0: 11,
+    y1: 23,
 },
 
 
@@ -2901,8 +2767,8 @@ yaxis16: {
     x0: 0,
     x1: 1,
     yref: "y7",
-    y0: 20,
-    y1: 25,
+    y0: 23,
+    y1: 26,
 },
 
 
@@ -2917,8 +2783,8 @@ yaxis16: {
     x0: 0,
     x1: 1,
     yref: "y7",
-    y0: 25,
-    y1: 27,
+    y0: 26,
+    y1: 28,
 },
 
 
@@ -2933,7 +2799,7 @@ yaxis16: {
     x0: 0,
     x1: 1,
     yref: "y7",
-    y0: 27,
+    y0: 28,
     y1: 31.5,
 },
 
@@ -3318,6 +3184,22 @@ yaxis16: {
     x1: 1,
     yref: "y11",
     y0: 8.5,
+    y1: 11.5,
+},
+
+
+
+{
+    type: "rect",
+    fillcolor: "maroon",
+    layer: "below",
+    line: { width: 0 },
+    opacity: 0.2,
+    xref: "paper",
+    x0: 0,
+    x1: 1,
+    yref: "y11",
+    y0: 11.5,
     y1: 21.0,
 },
 
@@ -3826,67 +3708,132 @@ setInterval(updateStatus_plot, 300 * 1000);
 
 
 
-<div id="section-log" data-section="log" class="content-section body-section light-bg-section">
+<div id="section-raw" data-section="raw" class="content-section body-section dark-bg-section">
   
   
   <div class="text-center fh5co-heading">
-    <h2>Client Log</h2>
-    <p>Latest log entries from this sensor's Brokkr client, updated dynamically every 10 s.</p>
+    <h2>Raw Output Data</h2>
+    <p>Raw current and 24-hour max/mean/min Brokkr output data, updated dynamically every 10 s.</p>
 
   </div>
   
 
-<div class="center full-width">
-  <div id="log-container" class="content-container text-content-container">
-  <code id="log-output" class="content-output text-content-output"></code>
-</div><script>
-var lastUpdate_log = null;
-var replaceItems = [['CRITICAL', "<span class='log-highlight critical'>CRITICAL</span>"], ['ERROR', "<span class='log-highlight error'>ERROR</span>"], ['WARNING', "<span class='log-highlight warning'>WARNING</span>"], ['INFO', "<span class='log-highlight info'>INFO</span>"], ['DEBUG', "<span class='log-highlight debug'>DEBUG</span>"], ['\\|', "<span class='pipe-colored log-pipe'>|</span>"]];
-var xhrUpdate_log = new XMLHttpRequest();
-xhrUpdate_log.onreadystatechange = function() {
-    if (this.readyState == XMLHttpRequest.DONE && this.status < 300 && this.status >= 200) {
-        var outputText = this.responseText;
-        outputText = outputText.replace(new RegExp("\n", "g"), "\n<br>\n");
-        for (i = 0; i < replaceItems.length; i++) {
-            var regexPattern = new RegExp(replaceItems[i][0], "g");
-            outputText = outputText.replace(regexPattern, replaceItems[i][1]);
-        };
-        var nodeToModify = document.getElementById("log-output");
-        nodeToModify.innerHTML = outputText;
-    };
-};
-
-var xhrCheck_log = new XMLHttpRequest();
-xhrCheck_log.onreadystatechange = function() {
-    if (this.readyState == XMLHttpRequest.DONE && this.status < 300 && this.status >= 200) {
-        var lastUpdateData = JSON.parse(this.responseText);
-        var currentUpdate = new Date(lastUpdateData.lastUpdate);
-        if (lastUpdate_log == null || lastUpdate_log.getTime() != currentUpdate.getTime()) {
-            lastUpdate_log = currentUpdate;
-            xhrUpdate_log.open("GET", "brokkr_log_latest.txt", true);
-            xhrUpdate_log.send();
-        };
-    };
-};
-
-
-function updateStatus_log() {
-    xhrCheck_log.open("GET", "log_lastupdate.json", true);
-    xhrCheck_log.send();
-};
-
-updateStatus_log();
-setInterval(updateStatus_log, 10 * 1000);
-</script>
-</div>
-
 
 <div class="row">
   
-  <a id="log-button" href="log" class="content-button text-button" >View Full Log</a>
+  <a id="raw-button" href="daily" class="content-button text-button" >View Full Daily Data</a>
   
 </div>
 
+
+<div class="center full-width">
+  <div id="raw-container" class="content-container table-content-container">
+  <div id="raw-output" class="content-output table-content-output"></div>
+</div><script>
+var colorMap_raw = {'runtime': [[1, 6, 24, 48], ['red', 'orange', 'yellow', 'lime', 'green']], 'ping': [[-0.5, 0.5], ['red', 'green', 'red']], 'adc_vb_f': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'adc_va_f': [[4, 12, 24, 32], ['red', 'orange', 'yellow', 'lime', 'green']], 'adc_vl_f': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'adc_ic_f': [[0.1, 0.5, 1.0, 2.0], ['red', 'orange', 'yellow', 'lime', 'green']], 'adc_il_f': [[0.1, 0.4, 0.6, 0.7, 1.5, 1.7, 1.8, 1.9], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 't_hs': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 't_batt': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 't_amb': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 't_rts': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'charge_state': [[0.5, 1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5], ['white', 'gray', 'maroon', 'black', 'red', 'green', 'lime', 'blue', 'teal']], 'array_fault': [[-0.5, 0.5], ['red', 'green', 'red']], 'vb_f': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'vb_ref': [[12.5, 12.8, 13.1, 13.9, 14.9, 15.0, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'load_state': [[0.5, 1.5, 2.5, 3.5, 4.5], ['gray', 'green', 'yellow', 'orange', 'red', 'maroon']], 'load_fault': [[-0.5, 0.5], ['red', 'green', 'red']], 'alarm': [[-0.5, 0.5, 500], ['red', 'green', 'lime', 'red']], 'led_state': [[-0.5, 2.5, 6.5, 8.5, 11.5], ['red', 'gray', 'green', 'yellow', 'red', 'maroon']], 'power_out': [[0.1, 6, 12, 24], ['red', 'orange', 'yellow', 'lime', 'green']], 'power_load': [[1, 5, 11, 23, 26, 28], ['black', 'orange', 'yellow', 'gray', 'green', 'orange', 'red']], 'power_net': [[-15, -5, 0, 15], ['red', 'orange', 'yellow', 'lime', 'green']], 'charge_net_24h': [[-100, -50, 0, 100], ['red', 'orange', 'yellow', 'lime', 'green']], 'sweep_vmp': [[4, 12, 24, 32], ['red', 'orange', 'yellow', 'lime', 'green']], 'sweep_pmax': [[0.1, 6, 12, 24], ['red', 'orange', 'yellow', 'lime', 'green']], 'sweep_voc': [[4, 12, 24, 32], ['red', 'orange', 'yellow', 'lime', 'green']], 'vb_min_daily': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'vb_max_daily': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'array_fault_daily': [[-0.5, 0.5], ['red', 'green', 'red']], 'load_fault_daily': [[-0.5, 0.5], ['red', 'green', 'red']], 'alarm_daily': [[-0.5, 0.5, 500], ['red', 'green', 'lime', 'red']], 'vb_min': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'vb_max': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'sensor_uptime': [[1, 6, 24, 48], ['red', 'orange', 'yellow', 'lime', 'green']], 'crc_errors': [[0.98, 5, 12.5, 50], ['green', 'lime', 'yellow', 'orange', 'red']], 'crc_errors_delta': [[0.1, 0.9, 1.5, 2.5], ['green', 'lime', 'yellow', 'orange', 'red']], 'crc_errors_hourly': [[0.98, 2.5, 4.5, 8.5], ['green', 'lime', 'yellow', 'orange', 'red']], 'crc_errors_daily': [[0.98, 5, 12.5, 50], ['green', 'lime', 'yellow', 'orange', 'red']], 'valid_packets': [[0.5, 1.5, 2.5, 4.5], ['red', 'orange', 'yellow', 'lime', 'green']], 'trigger_rate_1min': [[0.4, 1.4, 3, 6, 15, 30, 49], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'trigger_rate_5min': [[0.4, 1.4, 3, 6, 15, 30, 49], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'trigger_rate_1hr': [[0.4, 1.4, 3, 6, 15, 30, 49], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'bytes_read': [[0.01, 0.03, 0.05, 0.11], ['red', 'orange', 'yellow', 'lime', 'green']], 'bytes_written': [[0.01, 0.03, 0.05, 0.11], ['red', 'orange', 'yellow', 'lime', 'green']], 'bytes_remaining': [[1.3199999999999998, 44.0, 110.0, 220.0], ['red', 'orange', 'yellow', 'lime', 'green']], 'triggers_remaining': [[60, 2000, 5000, 10000], ['red', 'orange', 'yellow', 'lime', 'green']]};
+
+function getColor_raw(dataValue) {
+    if (dataValue.row == dataValue.value) {
+        return "table-cell-header";
+    };
+    if (dataValue.value == null) {
+        return "table-cell-null";
+    };
+    if (! colorMap_raw.hasOwnProperty(dataValue.row)) {
+        return "table-cell-nocolor";
+    };
+    var colorScale = Plotly.d3.scale.threshold()
+    .domain(colorMap_raw[dataValue.row][0])
+    .range(colorMap_raw[dataValue.row][1]);
+    return "table-cell-" + colorScale(dataValue.value);
+};
+
+var lastUpdate_raw = null;
+var columns_raw = ['Variable', 'Now', 'Min', 'Max', 'Avg'];
+
+var dataTable_raw = Plotly.d3.select("#raw-output").append("table");
+var tableHeader_raw = dataTable_raw.append("thead");
+var tableBody_raw = dataTable_raw.append("tbody");
+
+function createTableElement(dataValue) {
+    if (dataValue.row == dataValue.value) {
+        return document.createElement("th");
+    };
+    return document.createElement("td");
+};
+
+var enableQueryParsing = enableQueryParsing || false;
+
+var xhrCheck_raw = new XMLHttpRequest();
+xhrCheck_raw.onreadystatechange = function() {
+    if (this.readyState == XMLHttpRequest.DONE && this.status < 300 && this.status >= 200) {
+        var lastUpdateData = JSON.parse(this.responseText);
+        var currentUpdate = new Date(lastUpdateData.lastUpdate);
+        if (lastUpdate_raw == null || lastUpdate_raw.getTime() != currentUpdate.getTime()) {
+            lastUpdate_raw = currentUpdate;
+            if (enableQueryParsing) {
+                queryParams = parseQueryParams();
+                var extraPathText = queryParams["date"];
+                dataPath = "raw_data" + extraPathText + ".json";
+                document.getElementById("raw-button").href = dataPath;
+            } else {
+                dataPath = "raw_data" + ".json";
+                extraPathText = dataPath;
+            };
+            Plotly.d3.json(dataPath, function(error, data) {
+                if (false && (error || ! data || data.length < 2 ||  Object.values(Plotly.d3.values(data)[0])[0] == "")) {
+                    window.alert("Data for " + extraPathText + " not available.");
+                    return;
+                };
+                tableHeader_raw.selectAll("*").remove();
+                tableBody_raw.selectAll("*").remove();
+                if ((! columns_raw) || (columns_raw.length < 1)) {
+                    columns_raw = Object.keys(Plotly.d3.values(data)[0]);
+                };
+
+                tableHeader_raw.append("tr")
+                    .selectAll("th")
+                    .data(columns_raw)
+                    .enter()
+                    .append("th")
+                    .text(function (column) { return column; });
+
+                var rows = tableBody_raw.selectAll("tr")
+                    .data(data)
+                    .enter()
+                    .append("tr")
+
+                var cells = rows.selectAll("td")
+                    .data(function (row) {
+                        return columns_raw.map(function (column) {
+                            return {column: column, row: row[columns_raw[0]], value: row[column]};
+                        });
+                    })
+                    .enter()
+                    .append(createTableElement)
+                    .attr("class", getColor_raw)
+                    .html(function (d) { return d.value; });
+            });
+        };
+    };
+};
+
+function updateStatus_raw(event) {
+    event = event || false;
+    if (event) {
+        lastUpdate_raw = null;
+    }
+    xhrCheck_raw.open("GET", "raw_lastupdate.json", true);
+    xhrCheck_raw.send();
+};
+updateStatus_raw();
+
+if (enableQueryParsing) {
+    window.addEventListener("popstate", updateStatus_raw);
+}
+setInterval(updateStatus_raw, 10 * 1000);
+</script>
+</div>
 
 </div> <!-- END content-section -->
 
@@ -3895,7 +3842,7 @@ setInterval(updateStatus_log, 10 * 1000);
 
 
 
-<div id="section-archive" data-section="archive" class="content-section body-section dark-bg-section">
+<div id="section-archive" data-section="archive" class="content-section body-section light-bg-section">
   
   
   <div class="text-center fh5co-heading">
@@ -3910,7 +3857,7 @@ setInterval(updateStatus_log, 10 * 1000);
   <div id="archive-container" class="content-container table-content-container">
   <div id="archive-output" class="content-output table-content-output"></div>
 </div><script>
-var colorMap_archive = {'Rsrt': [[0.5, 1.5, 4.5, 24.5], ['green', 'lime', 'yellow', 'orange', 'red']], 'NAs': [[0.98, 5, 12.5, 50], ['green', 'lime', 'yellow', 'orange', 'red']], 'Vbat': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'Pin': [[0.1, 6, 12, 24], ['red', 'orange', 'yellow', 'lime', 'green']], 'Pout': [[1, 5, 10, 20, 25, 27], ['white', 'red', 'yellow', 'red', 'green', 'orange', 'red']], 'Tmax': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'Ntrg': [[10, 500, 1000, 2000, 4000, 8000, 16000], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'Ncrc': [[0.98, 5, 12.5, 50], ['green', 'lime', 'yellow', 'orange', 'red']], 'GByt': [[1.3199999999999998, 44.0, 110.0, 220.0], ['red', 'orange', 'yellow', 'lime', 'green']]};
+var colorMap_archive = {'Rsrt': [[0.5, 1.5, 4.5, 24.5], ['green', 'lime', 'yellow', 'orange', 'red']], 'NAs': [[0.98, 5, 12.5, 50], ['green', 'lime', 'yellow', 'orange', 'red']], 'Vbat': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'Pin': [[0.1, 6, 12, 24], ['red', 'orange', 'yellow', 'lime', 'green']], 'Pout': [[1, 5, 11, 23, 26, 28], ['black', 'orange', 'yellow', 'gray', 'green', 'orange', 'red']], 'Tmax': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'Ntrg': [[10, 500, 1000, 2000, 4000, 8000, 16000], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'Ncrc': [[0.98, 5, 12.5, 50], ['green', 'lime', 'yellow', 'orange', 'red']], 'GByt': [[1.3199999999999998, 44.0, 110.0, 220.0], ['red', 'orange', 'yellow', 'lime', 'green']]};
 
 function getColor_archive(dataValue) {
     if (dataValue.row == dataValue.value) {
@@ -4029,6 +3976,75 @@ setInterval(updateStatus_archive, 300 * 1000);
 
 
 
+
+<div id="section-log" data-section="log" class="content-section body-section dark-bg-section">
+  
+  
+  <div class="text-center fh5co-heading">
+    <h2>Client Log</h2>
+    <p>Latest log entries from this sensor's Brokkr client, updated dynamically every 10 s.</p>
+
+  </div>
+  
+
+<div class="center full-width">
+  <div id="log-container" class="content-container text-content-container">
+  <code id="log-output" class="content-output text-content-output"></code>
+</div><script>
+var lastUpdate_log = null;
+var replaceItems = [['CRITICAL', "<span class='log-highlight critical'>CRITICAL</span>"], ['ERROR', "<span class='log-highlight error'>ERROR</span>"], ['WARNING', "<span class='log-highlight warning'>WARNING</span>"], ['INFO', "<span class='log-highlight info'>INFO</span>"], ['DEBUG', "<span class='log-highlight debug'>DEBUG</span>"], ['\\|', "<span class='pipe-colored log-pipe'>|</span>"]];
+var xhrUpdate_log = new XMLHttpRequest();
+xhrUpdate_log.onreadystatechange = function() {
+    if (this.readyState == XMLHttpRequest.DONE && this.status < 300 && this.status >= 200) {
+        var outputText = this.responseText;
+        outputText = outputText.replace(new RegExp("\n", "g"), "\n<br>\n");
+        for (i = 0; i < replaceItems.length; i++) {
+            var regexPattern = new RegExp(replaceItems[i][0], "g");
+            outputText = outputText.replace(regexPattern, replaceItems[i][1]);
+        };
+        var nodeToModify = document.getElementById("log-output");
+        nodeToModify.innerHTML = outputText;
+    };
+};
+
+var xhrCheck_log = new XMLHttpRequest();
+xhrCheck_log.onreadystatechange = function() {
+    if (this.readyState == XMLHttpRequest.DONE && this.status < 300 && this.status >= 200) {
+        var lastUpdateData = JSON.parse(this.responseText);
+        var currentUpdate = new Date(lastUpdateData.lastUpdate);
+        if (lastUpdate_log == null || lastUpdate_log.getTime() != currentUpdate.getTime()) {
+            lastUpdate_log = currentUpdate;
+            xhrUpdate_log.open("GET", "brokkr_log_latest.txt", true);
+            xhrUpdate_log.send();
+        };
+    };
+};
+
+
+function updateStatus_log() {
+    xhrCheck_log.open("GET", "log_lastupdate.json", true);
+    xhrCheck_log.send();
+};
+
+updateStatus_log();
+setInterval(updateStatus_log, 10 * 1000);
+</script>
+</div>
+
+
+<div class="row">
+  
+  <a id="log-button" href="log" class="content-button text-button" >View Full Log</a>
+  
+</div>
+
+
+</div> <!-- END content-section -->
+
+
+
+
+
     <div id="fh5co-footer">
       <div class="container">
         
@@ -4048,7 +4064,7 @@ setInterval(updateStatus_archive, 300 * 1000);
               <br><a href="https://github.com/SteveLane/hugo-icon" target="_blank" rel="noopener noreferrer">Hugo port</a> by <a href="https://github.com/SteveLane/" target="_blank" rel="noopener noreferrer">SteveLane</a> <span class="pipe-colored">|</span> <a href="https://github.com/spyder-ide/lektor-icon" target="_blank" rel="noopener noreferrer">Lektor&nbsp;port</a>&nbsp;by&nbsp;<a href="https://github.com/dalthviz/" target="_blank" rel="noopener noreferrer">Dalthviz</a>
               <br>Theme rewritten and maintained by <a href="http://gerlach.cam" target="_blank" rel="noopener noreferrer">C.A.M.&nbsp;Gerlach</a>
               
-              <br><a href='https://github.com/hamma-dev/sindri' target='_blank' rel='noopener noreferrer'>Sindri</a>&nbsp;0.2.7 <span class='pipe-colored'>|</span> <a href='https://www.getlektor.com/' target='_blank' rel='noopener noreferrer'>Lektor</a>&nbsp;3.1.3 <span class='pipe-colored'>|</span> <a href='https://spyder-ide.github.io/lektor-icon/' target='_blank' rel='noopener noreferrer'>Lektor&#8209;Icon</a>&nbsp;2.0.0.dev0<br>Site Build Timestamp: 2020-05-15 20:59:42.021247 UTC
+              <br><a href='https://github.com/hamma-dev/sindri' target='_blank' rel='noopener noreferrer'>Sindri</a>&nbsp;0.2.7 <span class='pipe-colored'>|</span> <a href='https://www.getlektor.com/' target='_blank' rel='noopener noreferrer'>Lektor</a>&nbsp;3.1.3 <span class='pipe-colored'>|</span> <a href='https://spyder-ide.github.io/lektor-icon/' target='_blank' rel='noopener noreferrer'>Lektor&#8209;Icon</a>&nbsp;2.0.0.dev0<br>Site Build Timestamp: 2020-05-16 03:56:22.817703 UTC
               
             </p>
           </div>
