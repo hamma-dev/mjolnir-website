@@ -1411,7 +1411,7 @@ yaxis16: {
 
 {
     type: "rect",
-    fillcolor: "gray",
+    fillcolor: "red",
     layer: "below",
     line: { width: 0 },
     opacity: 0.2,
@@ -1420,14 +1420,14 @@ yaxis16: {
     x1: 1,
     yref: "y6",
     y0: -0.4,
-    y1: 0.5,
+    y1: -0.5,
 },
 
 
 
 {
     type: "rect",
-    fillcolor: "blue",
+    fillcolor: "gray",
     layer: "below",
     line: { width: 0 },
     opacity: 0.2,
@@ -1435,23 +1435,7 @@ yaxis16: {
     x0: 0,
     x1: 1,
     yref: "y6",
-    y0: 0.5,
-    y1: 1.5,
-},
-
-
-
-{
-    type: "rect",
-    fillcolor: "maroon",
-    layer: "below",
-    line: { width: 0 },
-    opacity: 0.2,
-    xref: "paper",
-    x0: 0,
-    x1: 1,
-    yref: "y6",
-    y0: 1.5,
+    y0: -0.5,
     y1: 2.5,
 },
 
@@ -1459,7 +1443,7 @@ yaxis16: {
 
 {
     type: "rect",
-    fillcolor: "orange",
+    fillcolor: "black",
     layer: "below",
     line: { width: 0 },
     opacity: 0.2,
@@ -1491,38 +1475,6 @@ yaxis16: {
 
 {
     type: "rect",
-    fillcolor: "yellow",
-    layer: "below",
-    line: { width: 0 },
-    opacity: 0.2,
-    xref: "paper",
-    x0: 0,
-    x1: 1,
-    yref: "y6",
-    y0: 4.5,
-    y1: 5.5,
-},
-
-
-
-{
-    type: "rect",
-    fillcolor: "lime",
-    layer: "below",
-    line: { width: 0 },
-    opacity: 0.2,
-    xref: "paper",
-    x0: 0,
-    x1: 1,
-    yref: "y6",
-    y0: 5.5,
-    y1: 6.5,
-},
-
-
-
-{
-    type: "rect",
     fillcolor: "green",
     layer: "below",
     line: { width: 0 },
@@ -1531,15 +1483,15 @@ yaxis16: {
     x0: 0,
     x1: 1,
     yref: "y6",
-    y0: 6.5,
-    y1: 7.5,
+    y0: 4.5,
+    y1: 8.5,
 },
 
 
 
 {
     type: "rect",
-    fillcolor: "teal",
+    fillcolor: "red",
     layer: "below",
     line: { width: 0 },
     opacity: 0.2,
@@ -1547,7 +1499,7 @@ yaxis16: {
     x0: 0,
     x1: 1,
     yref: "y6",
-    y0: 7.5,
+    y0: 8.5,
     y1: 8.4,
 },
 
@@ -1612,7 +1564,7 @@ yaxis16: {
     x1: 1,
     yref: "y7",
     y0: 11,
-    y1: 23,
+    y1: 22,
 },
 
 
@@ -1627,7 +1579,7 @@ yaxis16: {
     x0: 0,
     x1: 1,
     yref: "y7",
-    y0: 23,
+    y0: 22,
     y1: 26,
 },
 
@@ -2028,7 +1980,23 @@ yaxis16: {
     x1: 1,
     yref: "y11",
     y0: 6.5,
-    y1: 8.5,
+    y1: 9.5,
+},
+
+
+
+{
+    type: "rect",
+    fillcolor: "orange",
+    layer: "below",
+    line: { width: 0 },
+    opacity: 0.2,
+    xref: "paper",
+    x0: 0,
+    x1: 1,
+    yref: "y11",
+    y0: 9.5,
+    y1: 10.5,
 },
 
 
@@ -2043,7 +2011,7 @@ yaxis16: {
     x0: 0,
     x1: 1,
     yref: "y11",
-    y0: 8.5,
+    y0: 10.5,
     y1: 11.5,
 },
 
@@ -2590,7 +2558,7 @@ setInterval(updateStatus_dailyplot, 600 * 1000);
   <div id="dailytable-container" class="content-container table-content-container">
   <div id="dailytable-output" class="content-output table-content-output"></div>
 </div><script>
-var colorMap_dailytable = {'runtime': [[1, 6, 24, 48], ['red', 'orange', 'yellow', 'lime', 'green']], 'ping': [[-0.5, 0.5], ['red', 'green', 'red']], 'adc_vb_f': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'adc_va_f': [[4, 12, 24, 32], ['red', 'orange', 'yellow', 'lime', 'green']], 'adc_vl_f': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'adc_ic_f': [[0.1, 0.5, 1.0, 2.0], ['red', 'orange', 'yellow', 'lime', 'green']], 'adc_il_f': [[0.1, 0.4, 0.6, 0.7, 1.5, 1.7, 1.8, 1.9], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 't_hs': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 't_batt': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 't_amb': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 't_rts': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'charge_state': [[0.5, 1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5], ['gray', 'blue', 'maroon', 'orange', 'red', 'yellow', 'lime', 'green', 'teal']], 'array_fault': [[-0.5, 0.5], ['red', 'green', 'red']], 'vb_f': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'vb_ref': [[12.5, 12.8, 13.1, 13.9, 14.9, 15.0, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'load_state': [[0.5, 1.5, 2.5, 3.5, 4.5], ['gray', 'green', 'yellow', 'orange', 'red', 'maroon']], 'load_fault': [[-0.5, 0.5], ['red', 'green', 'red']], 'alarm': [[-0.5, 0.5, 500], ['red', 'green', 'lime', 'red']], 'led_state': [[-0.5, 2.5, 6.5, 8.5, 11.5], ['red', 'gray', 'green', 'yellow', 'red', 'maroon']], 'power_out': [[0.1, 6, 12, 24], ['red', 'orange', 'yellow', 'lime', 'green']], 'power_load': [[1, 5, 11, 23, 26, 28], ['black', 'orange', 'yellow', 'gray', 'green', 'orange', 'red']], 'power_net': [[-15, -5, 0, 15], ['red', 'orange', 'yellow', 'lime', 'green']], 'ahnet_daily': [[-20, -10, 0, 10], ['red', 'orange', 'yellow', 'lime', 'green']], 'sweep_vmp': [[4, 12, 24, 32], ['red', 'orange', 'yellow', 'lime', 'green']], 'sweep_pmax': [[0.1, 6, 12, 24], ['red', 'orange', 'yellow', 'lime', 'green']], 'sweep_voc': [[4, 12, 24, 32], ['red', 'orange', 'yellow', 'lime', 'green']], 'vb_min_daily': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'vb_max_daily': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'array_fault_daily': [[-0.5, 0.5], ['red', 'green', 'red']], 'load_fault_daily': [[-0.5, 0.5], ['red', 'green', 'red']], 'alarm_daily': [[-0.5, 0.5, 500], ['red', 'green', 'lime', 'red']], 'vb_min': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'vb_max': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'sensor_uptime': [[1, 6, 24, 48], ['red', 'orange', 'yellow', 'lime', 'green']], 'crc_errors': [[0.98, 5, 12.5, 50], ['green', 'lime', 'yellow', 'orange', 'red']], 'crc_errors_delta': [[0.1, 0.9, 1.5, 2.5], ['green', 'lime', 'yellow', 'orange', 'red']], 'crc_errors_hourly': [[0.98, 2.5, 4.5, 8.5], ['green', 'lime', 'yellow', 'orange', 'red']], 'crc_errors_daily': [[0.98, 5, 12.5, 50], ['green', 'lime', 'yellow', 'orange', 'red']], 'valid_packets': [[0.5, 1.5, 2.5, 4.5], ['red', 'orange', 'yellow', 'lime', 'green']], 'trigger_rate_1min': [[0.4, 1.4, 3, 6, 15, 30, 49], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'trigger_rate_5min': [[0.4, 1.4, 3, 6, 15, 30, 49], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'trigger_rate_1hr': [[0.4, 1.4, 3, 6, 15, 30, 49], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'bytes_read': [[0.01, 0.03, 0.05, 0.11], ['red', 'orange', 'yellow', 'lime', 'green']], 'bytes_written': [[0.01, 0.03, 0.05, 0.11], ['red', 'orange', 'yellow', 'lime', 'green']], 'bytes_remaining': [[1.3199999999999998, 44.0, 110.0, 220.0], ['red', 'orange', 'yellow', 'lime', 'green']], 'triggers_remaining': [[60, 2000, 5000, 10000], ['red', 'orange', 'yellow', 'lime', 'green']]};
+var colorMap_dailytable = {'runtime': [[1, 6, 24, 48], ['red', 'orange', 'yellow', 'lime', 'green']], 'ping': [[-0.5, 0.5], ['red', 'green', 'red']], 'adc_vb_f': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'adc_va_f': [[4, 12, 24, 32], ['red', 'orange', 'yellow', 'lime', 'green']], 'adc_vl_f': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'adc_ic_f': [[0.1, 0.5, 1.0, 2.0], ['red', 'orange', 'yellow', 'lime', 'green']], 'adc_il_f': [[0.1, 0.4, 0.6, 0.7, 1.5, 1.7, 1.8, 1.9], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 't_hs': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 't_batt': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 't_amb': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 't_rts': [[-10, 0, 10, 40, 50, 60, 70], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'charge_state': [[-0.5, 2.5, 3.5, 4.5, 8.5], ['red', 'gray', 'black', 'red', 'green', 'red']], 'array_fault': [[-0.5, 0.5], ['red', 'green', 'red']], 'vb_f': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'vb_ref': [[12.5, 12.8, 13.1, 13.9, 14.9, 15.0, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'load_state': [[0.5, 1.5, 2.5, 3.5, 4.5], ['gray', 'green', 'yellow', 'orange', 'red', 'maroon']], 'load_fault': [[-0.5, 0.5], ['red', 'green', 'red']], 'alarm': [[-0.5, 0.5, 500], ['red', 'green', 'lime', 'red']], 'led_state': [[-0.5, 2.5, 6.5, 9.5, 10.5, 11.5], ['red', 'gray', 'green', 'yellow', 'orange', 'red', 'maroon']], 'power_out': [[0.1, 6, 12, 24], ['red', 'orange', 'yellow', 'lime', 'green']], 'power_load': [[1, 5, 11, 22, 26, 28], ['black', 'orange', 'yellow', 'gray', 'green', 'orange', 'red']], 'power_net': [[-15, -5, 0, 15], ['red', 'orange', 'yellow', 'lime', 'green']], 'ahnet_daily': [[-20, -10, 0, 10], ['red', 'orange', 'yellow', 'lime', 'green']], 'sweep_vmp': [[4, 12, 24, 32], ['red', 'orange', 'yellow', 'lime', 'green']], 'sweep_pmax': [[0.1, 6, 12, 24], ['red', 'orange', 'yellow', 'lime', 'green']], 'sweep_voc': [[4, 12, 24, 32], ['red', 'orange', 'yellow', 'lime', 'green']], 'vb_min_daily': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'vb_max_daily': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'array_fault_daily': [[-0.5, 0.5], ['red', 'green', 'red']], 'load_fault_daily': [[-0.5, 0.5], ['red', 'green', 'red']], 'alarm_daily': [[-0.5, 0.5, 500], ['red', 'green', 'lime', 'red']], 'vb_min': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'vb_max': [[10.4, 11, 11.5, 12, 14.8, 15.9, 15.1, 15.5], ['red', 'orange', 'yellow', 'lime', 'green', 'lime', 'yellow', 'orange', 'red']], 'sensor_uptime': [[1, 6, 24, 48], ['red', 'orange', 'yellow', 'lime', 'green']], 'crc_errors': [[0.98, 5, 12.5, 50], ['green', 'lime', 'yellow', 'orange', 'red']], 'crc_errors_delta': [[0.1, 0.9, 1.5, 2.5], ['green', 'lime', 'yellow', 'orange', 'red']], 'crc_errors_hourly': [[0.98, 2.5, 4.5, 8.5], ['green', 'lime', 'yellow', 'orange', 'red']], 'crc_errors_daily': [[0.98, 5, 12.5, 50], ['green', 'lime', 'yellow', 'orange', 'red']], 'valid_packets': [[0.5, 1.5, 2.5, 4.5], ['red', 'orange', 'yellow', 'lime', 'green']], 'trigger_rate_1min': [[0.4, 1.4, 3, 6, 15, 30, 49], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'trigger_rate_5min': [[0.4, 1.4, 3, 6, 15, 30, 49], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'trigger_rate_1hr': [[0.4, 1.4, 3, 6, 15, 30, 49], ['gray', 'blue', 'teal', 'green', 'lime', 'yellow', 'orange', 'red']], 'bytes_read': [[0.01, 0.03, 0.05, 0.11], ['red', 'orange', 'yellow', 'lime', 'green']], 'bytes_written': [[0.01, 0.03, 0.05, 0.11], ['red', 'orange', 'yellow', 'lime', 'green']], 'bytes_remaining': [[1.3199999999999998, 44.0, 110.0, 220.0], ['red', 'orange', 'yellow', 'lime', 'green']], 'triggers_remaining': [[60, 2000, 5000, 10000], ['red', 'orange', 'yellow', 'lime', 'green']]};
 
 function getColor_dailytable(dataValue) {
     if (dataValue.row == dataValue.value) {
@@ -2720,7 +2688,7 @@ setInterval(updateStatus_dailytable, 600 * 1000);
               <br><a href="https://github.com/SteveLane/hugo-icon" target="_blank" rel="noopener noreferrer">Hugo port</a> by <a href="https://github.com/SteveLane/" target="_blank" rel="noopener noreferrer">SteveLane</a> <span class="pipe-colored">|</span> <a href="https://github.com/spyder-ide/lektor-icon" target="_blank" rel="noopener noreferrer">Lektor&nbsp;port</a>&nbsp;by&nbsp;<a href="https://github.com/dalthviz/" target="_blank" rel="noopener noreferrer">Dalthviz</a>
               <br>Theme rewritten and maintained by <a href="http://gerlach.cam" target="_blank" rel="noopener noreferrer">C.A.M.&nbsp;Gerlach</a>
               
-              <br><a href='https://github.com/hamma-dev/sindri' target='_blank' rel='noopener noreferrer'>Sindri</a>&nbsp;0.2.8 <span class='pipe-colored'>|</span> <a href='https://www.getlektor.com/' target='_blank' rel='noopener noreferrer'>Lektor</a>&nbsp;3.1.3 <span class='pipe-colored'>|</span> <a href='https://spyder-ide.github.io/lektor-icon/' target='_blank' rel='noopener noreferrer'>Lektor&#8209;Icon</a>&nbsp;2.0.0.dev0<br>Site Build Timestamp: 2020-05-24 15:04:11.397868 UTC
+              <br><a href='https://github.com/hamma-dev/sindri' target='_blank' rel='noopener noreferrer'>Sindri</a>&nbsp;0.2.8 <span class='pipe-colored'>|</span> <a href='https://www.getlektor.com/' target='_blank' rel='noopener noreferrer'>Lektor</a>&nbsp;3.1.3 <span class='pipe-colored'>|</span> <a href='https://spyder-ide.github.io/lektor-icon/' target='_blank' rel='noopener noreferrer'>Lektor&#8209;Icon</a>&nbsp;2.0.0.dev0<br>Site Build Timestamp: 2020-05-24 16:04:44.003442 UTC
               
             </p>
           </div>
