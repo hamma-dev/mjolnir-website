@@ -1,30 +1,30 @@
-2020-05-21 19:51:27.434 | INFO | MainProcess | brokkr.multiprocess.handler | Starting worker process <Process(Telemetry Process, initial)> (T+1463 ms)
-2020-05-21 19:51:27.443 | INFO | MainProcess | brokkr.multiprocess.handler | Finished starting worker process <Process(Telemetry Process, started)> (T+1472 ms)
-2020-05-21 19:51:27.447 | INFO | MainProcess | brokkr.multiprocess.handler | Starting manager (T+1476 ms)
-2020-05-21 19:51:27.454 | INFO | Telemetry Process | brokkr.multiprocess.handler | Started worker process Telemetry Process (T+1484 ms)
-2020-05-21 19:51:27.796 | INFO | Telemetry Process | brokkr.pipeline.pipeline.SequentialPipeline | Beginning execution of Telemetry (brokkr.pipeline.pipeline.SequentialPipeline) (T+1825 ms)
-2020-05-28 08:21:49.315 | INFO | LogProcess | brokkr.multiprocess.loglistener | Starting logging system (T+227 ms)
-2020-05-28 08:21:50.309 | INFO | MainProcess | brokkr.multiprocess.handler | Set up logging for main thread (T+1221 ms)
-2020-05-28 08:21:50.310 | INFO | MainProcess | brokkr.start | Starting Brokkr version 0.3.0.a2, HAMMA Sensor System version 0.1.0a5... (T+1222 ms)
-2020-05-28 08:21:50.352 | INFO | MainProcess | brokkr.start | Systempath config: {'default_system': 'hamma', 'system_path_override': '', 'system_paths': {'hamma': '/home/pi/dev/mjolnir-hamma'}, 'config_version': 1} (T+1264 ms)
-2020-05-28 08:21:50.352 | INFO | MainProcess | brokkr.start | Metadata config: {'name': 'hamma', 'name_full': 'HAMMA Sensor System', 'author': 'C.A.M. Gerlach and the UAH HAMMA group', 'description': 'System configuration for the Huntsville AL Marx Meter Array', 'homepage': 'https://hamma.dev/', 'repo': 'https://github.com/hamma-dev/mjolnir-hamma', 'version': '0.1.0a5', 'license': '', 'brokkr_version_min': '0.3.0a1', 'brokkr_version_max': '', 'sindri_version_min': '0.3.0', 'sindri_version_max': '', 'config_version': 1} (T+1264 ms)
-2020-05-28 08:21:50.352 | INFO | MainProcess | brokkr.start | Unit config: {'number': 1, 'network_interface': 'wwan0', 'site_description': '', 'config_version': 1} (T+1264 ms)
-2020-05-28 08:21:50.352 | INFO | MainProcess | brokkr.start | Log config: {'version': 1, 'disable_existing_loggers': False, 'formatters': {'detailed': {'datefmt': '%Y-%m-%d %H:%M:%S', 'format': '{asctime}.{msecs:0>3.0f} | {levelname} | {processName} | {name} | {message} (T+{relativeCreated:.0f} ms)', 'style': '{'}}, 'handlers': {'file': {'backupCount': 10, 'class': 'logging.handlers.RotatingFileHandler', 'encoding': 'utf-8', 'filename': PosixPath('/home/pi/brokkr/hamma/log/brokkr_hamma_001.log'), 'formatter': 'detailed', 'level': 'INFO', 'maxBytes': 10000000}, 'console': {'class': 'logging.StreamHandler', 'formatter': 'detailed', 'level': 'INFO', 'stream': 'ext://sys.stdout'}}, 'root': {'handlers': ['file', 'console'], 'level': 'INFO'}, 'config_version': 1} (T+1265 ms)
-2020-05-28 08:21:50.352 | INFO | MainProcess | brokkr.start | Main config: {'general': {'monitoring_pipeline_default': 'telemetry', 'na_marker': 'NA', 'output_filename_client': '{output_type}_{system_prefix}_{unit_number:0>3}_{utc_date!s}.{extension}', 'output_path_client': PosixPath('/home/pi/brokkr/{system_name}'), 'system_prefix': '', 'worker_shutdown_wait_s': 10}, 'autossh': {'local_port': 22, 'server_hostname': 'proxy.nsstc.uah.edu', 'server_port': 22, 'server_username': 'mjolnir', 'tunnel_port_offset': 10000}, 'steps': {'telemetry_csv_output': {'_preset': 'builtins.outputs.csv_file', 'name': 'Telemetry CSV Output', 'output_path': 'telemetry', 'filename_kwargs': {'output_type': 'telemetry'}}}, 'pipelines': {'telemetry': {'_builder': 'monitor', 'name': 'Telemetry', 'monitor_interval_s': 10, 'monitor_input_steps': ['builtins.inputs.current_time', 'builtins.inputs.run_time', 'sunsaver_mppt_15l.inputs.ram', 'hamma2.inputs.ping', 'hamma2.inputs.hs'], 'monitor_output_steps': ['telemetry_csv_output']}}, 'config_version': 1} (T+1265 ms)
-2020-05-28 08:21:50.353 | INFO | MainProcess | brokkr.start | Presets config: ['builtins', 'hamma2', 'sunsaver_mppt_15l'] (T+1265 ms)
-2020-05-28 08:21:50.353 | INFO | MainProcess | brokkr.multiprocess.handler | Starting worker process <Process(Telemetry Process, initial)> (T+1266 ms)
-2020-05-28 08:21:50.357 | INFO | MainProcess | brokkr.multiprocess.handler | Finished starting worker process <Process(Telemetry Process, started)> (T+1270 ms)
-2020-05-28 08:21:50.359 | INFO | MainProcess | brokkr.multiprocess.handler | Starting manager (T+1271 ms)
-2020-05-28 08:21:50.363 | INFO | Telemetry Process | brokkr.multiprocess.handler | Started worker process Telemetry Process (T+1275 ms)
-2020-05-28 08:21:50.572 | INFO | Telemetry Process | brokkr.pipeline.pipeline.SequentialPipeline | Beginning execution of Telemetry (brokkr.pipeline.pipeline.SequentialPipeline) (T+1484 ms)
-2020-05-29 19:15:24.184 | WARNING | MainProcess | brokkr.multiprocess.handler | Interrupted by signal 15; terminating. (T+125615097 ms)
-2020-05-29 19:15:24.184 | WARNING | Telemetry Process | brokkr.pipeline.pipeline.SequentialPipeline | Interrupted by signal 15; terminating. (T+125615097 ms)
-2020-05-29 19:15:24.376 | INFO | Telemetry Process | brokkr.pipeline.pipeline.SequentialPipeline | Shutting down Telemetry (brokkr.pipeline.pipeline.SequentialPipeline) (T+125615288 ms)
-2020-05-29 19:15:24.545 | INFO | MainProcess | brokkr.multiprocess.handler | Exiting manager (T+125615458 ms)
-2020-05-29 19:15:24.546 | INFO | MainProcess | brokkr.multiprocess.handler | Beginning worker shutdown (T+125615458 ms)
-2020-05-29 19:15:24.546 | INFO | MainProcess | brokkr.multiprocess.handler | Attempting to shut down worker <Process(Telemetry Process, started)> (T+125615459 ms)
-2020-05-29 19:15:24.880 | INFO | MainProcess | brokkr.multiprocess.handler | Process <Process(Telemetry Process, stopped)> shut down (T+125615792 ms)
-2020-05-29 19:15:24.883 | INFO | MainProcess | brokkr.multiprocess.handler | Worker shutdown finished in 337.0 ms with 0 terminated, 0 failed (T+125615796 ms)
-2020-05-29 19:15:24.884 | INFO | MainProcess | brokkr.multiprocess.handler | Shutting down logging process (T+125615796 ms)
-2020-05-29 19:15:24.888 | INFO | LogProcess | brokkr.multiprocess.loglistener | Shutting down logging system (T+125615800 ms)
-2020-05-29 19:15:24.889 | INFO | LogProcess | brokkr.multiprocess.loglistener | Logging system shut down (T+125615801 ms)
+2020-05-29 19:22:43.179 | INFO | Telemetry Process | brokkr.multiprocess.handler | Started worker process Telemetry Process (T+1395 ms)
+2020-05-29 19:22:43.416 | CRITICAL | Telemetry Process | brokkr.multiprocess.handler | TypeError during executor build for process Telemetry Process: __init__() missing 1 required positional argument: 'steps' (T+1633 ms)
+2020-05-29 19:22:43.417 | INFO | Telemetry Process | brokkr.multiprocess.handler | Error details:
+Traceback (most recent call last):
+  File "/home/pi/dev/brokkr/src/brokkr/multiprocess/handler.py", line 43, in start_worker_process
+    **worker_config.build_kwargs,
+  File "/home/pi/dev/brokkr/src/brokkr/pipeline/builder.py", line 232, in setup_and_build
+    built_object = self.build(build_context=build_context)
+  File "/home/pi/dev/brokkr/src/brokkr/pipeline/builder.py", line 202, in build
+    built_steps = [subbuilder.build() for subbuilder in self.subbuilders]
+  File "/home/pi/dev/brokkr/src/brokkr/pipeline/builder.py", line 202, in <listcomp>
+    built_steps = [subbuilder.build() for subbuilder in self.subbuilders]
+  File "/home/pi/dev/brokkr/src/brokkr/pipeline/builder.py", line 202, in build
+    built_steps = [subbuilder.build() for subbuilder in self.subbuilders]
+  File "/home/pi/dev/brokkr/src/brokkr/pipeline/builder.py", line 202, in <listcomp>
+    built_steps = [subbuilder.build() for subbuilder in self.subbuilders]
+  File "/home/pi/dev/brokkr/src/brokkr/pipeline/builder.py", line 226, in build
+    exit_event=build_context.exit_event, **self.init_kwargs)
+TypeError: __init__() missing 1 required positional argument: 'steps' (T+1634 ms)
+2020-05-29 19:22:43.422 | INFO | Telemetry Process | brokkr.multiprocess.handler | Build method: setup_and_build; Build args: (); Build kwargs: {} (T+1639 ms)
+2020-05-29 19:22:43.663 | INFO | MainProcess | brokkr.multiprocess.handler | Exiting manager (T+1880 ms)
+2020-05-29 19:22:43.664 | INFO | MainProcess | brokkr.multiprocess.handler | Beginning worker shutdown (T+1880 ms)
+2020-05-29 19:22:43.664 | INFO | MainProcess | brokkr.multiprocess.handler | Attempting to shut down worker <Process(Telemetry Process, stopped[1])> (T+1881 ms)
+2020-05-29 19:22:43.665 | INFO | MainProcess | brokkr.multiprocess.handler | Process <Process(Telemetry Process, stopped[1])> shut down (T+1882 ms)
+2020-05-29 19:22:43.665 | ERROR | MainProcess | brokkr.multiprocess.handler | Worker <Process(Telemetry Process, stopped[1])> failed with exitcode 1 (T+1882 ms)
+2020-05-29 19:22:43.666 | INFO | MainProcess | brokkr.multiprocess.handler | Process info <Process(Telemetry Process, stopped[1])> (T+1882 ms)
+2020-05-29 19:22:43.667 | INFO | MainProcess | brokkr.multiprocess.handler | Worker shutdown finished in 2.7 ms with 0 terminated, 1 failed (T+1883 ms)
+2020-05-29 19:22:43.667 | INFO | MainProcess | brokkr.multiprocess.handler | Shutting down logging process (T+1884 ms)
+2020-05-29 19:22:43.677 | INFO | LogProcess | brokkr.multiprocess.loglistener | Shutting down logging system (T+1893 ms)
+2020-05-29 19:22:43.678 | INFO | LogProcess | brokkr.multiprocess.loglistener | Logging system shut down (T+1894 ms)
