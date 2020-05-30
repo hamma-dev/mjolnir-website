@@ -1,4 +1,3 @@
-2020-05-30 06:02:56.070 | INFO | LogProcess | brokkr.multiprocess.loglistener | Starting logging system (T+226 ms)
 2020-05-30 06:02:57.063 | INFO | MainProcess | brokkr.multiprocess.handler | Set up logging for main thread (T+1219 ms)
 2020-05-30 06:02:57.064 | INFO | MainProcess | brokkr.start | Starting Brokkr version 0.3.0.a2, HAMMA Sensor System version 0.1.0a5... (T+1221 ms)
 2020-05-30 06:02:57.112 | INFO | MainProcess | brokkr.start | Systempath config: {'default_system': 'hamma', 'system_path_override': '', 'system_paths': {'hamma': '/home/pi/dev/mjolnir-hamma'}, 'config_version': 1} (T+1269 ms)
@@ -28,3 +27,4 @@
 2020-05-30 14:20:39.788 | INFO | Telemetry Process | brokkr.pipeline.pipeline.SequentialPipeline | Beginning execution of Telemetry (brokkr.pipeline.pipeline.SequentialPipeline) (T+1831 ms)
 2020-05-30 14:22:28.960 | INFO | Telemetry Process | plugins.state_monitor.StateNotifier | Battery voltage critically low 11.530 (T+111003 ms)
 2020-05-30 21:06:59.167 | INFO | Telemetry Process | plugins.state_monitor.StateNotifier | Battery voltage critically low 11.578 (T+24381210 ms)
+2020-05-30 22:27:58.884 | INFO | Telemetry Process | plugins.state_monitor.StateNotifier | Battery voltage critically low 11.542 (T+29240927 ms)
