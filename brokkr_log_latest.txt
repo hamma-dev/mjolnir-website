@@ -1,4 +1,3 @@
-2020-05-30 00:04:07.504 | INFO | MainProcess | brokkr.start | Starting Brokkr version 0.3.0.a2, HAMMA Sensor System version 0.1.0a5... (T+1253 ms)
 2020-05-30 00:04:07.585 | INFO | MainProcess | brokkr.start | Systempath config: {'default_system': 'hamma', 'system_path_override': '', 'system_paths': {'hamma': '/home/pi/dev/mjolnir-hamma'}, 'config_version': 1} (T+1335 ms)
 2020-05-30 00:04:07.586 | INFO | MainProcess | brokkr.start | Metadata config: {'name': 'hamma', 'name_full': 'HAMMA Sensor System', 'author': 'C.A.M. Gerlach and the UAH HAMMA group', 'description': 'System configuration for the Huntsville AL Marx Meter Array', 'homepage': 'https://hamma.dev/', 'repo': 'https://github.com/hamma-dev/mjolnir-hamma', 'version': '0.1.0a5', 'license': '', 'brokkr_version_min': '0.3.0a1', 'brokkr_version_max': '', 'sindri_version_min': '0.3.0', 'sindri_version_max': '', 'config_version': 1} (T+1336 ms)
 2020-05-30 00:04:07.586 | INFO | MainProcess | brokkr.start | Unit config: {'number': 1, 'network_interface': 'wwan0', 'site_description': '', 'config_version': 1} (T+1336 ms)
@@ -28,3 +27,4 @@
 2020-05-30 04:58:16.556 | INFO | Telemetry Process | plugins.state_monitor.StateNotifier | Battery voltage critically low 11.554 (T+17650306 ms)
 2020-05-30 05:00:16.574 | INFO | Telemetry Process | plugins.state_monitor.StateNotifier | Battery voltage critically low 11.566 (T+17770324 ms)
 2020-05-30 05:01:16.583 | INFO | Telemetry Process | plugins.state_monitor.StateNotifier | Battery voltage critically low 11.572 (T+17830333 ms)
+2020-05-30 05:24:26.816 | INFO | Telemetry Process | plugins.state_monitor.StateNotifier | Battery voltage critically low 11.560 (T+19220566 ms)
