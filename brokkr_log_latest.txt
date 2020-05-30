@@ -1,4 +1,3 @@
-2020-05-30 00:00:56.616 | INFO | LogProcess | brokkr.multiprocess.loglistener | Shutting down logging system (T+202101 ms)
 2020-05-30 00:00:56.617 | INFO | LogProcess | brokkr.multiprocess.loglistener | Logging system shut down (T+202102 ms)
 2020-05-30 00:04:06.514 | INFO | LogProcess | brokkr.multiprocess.loglistener | Starting logging system (T+264 ms)
 2020-05-30 00:04:07.501 | INFO | MainProcess | brokkr.multiprocess.handler | Set up logging for main thread (T+1251 ms)
@@ -28,3 +27,4 @@
 2020-05-30 03:19:46.561 | INFO | Telemetry Process | plugins.state_monitor.StateNotifier | Battery voltage critically low 11.566 (T+11740311 ms)
 2020-05-30 03:20:06.577 | INFO | Telemetry Process | plugins.state_monitor.StateNotifier | Battery voltage critically low 11.560 (T+11760327 ms)
 2020-05-30 03:20:26.567 | INFO | Telemetry Process | plugins.state_monitor.StateNotifier | Battery voltage critically low 11.569 (T+11780316 ms)
+2020-05-30 03:25:36.611 | INFO | Telemetry Process | plugins.state_monitor.StateNotifier | Battery voltage critically low 11.563 (T+12090361 ms)
