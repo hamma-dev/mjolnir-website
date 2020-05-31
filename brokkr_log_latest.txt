@@ -1,4 +1,3 @@
-2020-05-30 06:02:57.114 | INFO | MainProcess | brokkr.multiprocess.handler | Starting worker process <Process(Telemetry Process, initial)> (T+1271 ms)
 2020-05-30 06:02:57.121 | INFO | MainProcess | brokkr.multiprocess.handler | Finished starting worker process <Process(Telemetry Process, started)> (T+1278 ms)
 2020-05-30 06:02:57.123 | INFO | MainProcess | brokkr.multiprocess.handler | Starting manager (T+1279 ms)
 2020-05-30 06:02:57.129 | INFO | Telemetry Process | brokkr.multiprocess.handler | Started worker process Telemetry Process (T+1285 ms)
@@ -28,3 +27,4 @@
 2020-05-30 23:39:48.533 | INFO | Telemetry Process | plugins.state_monitor.StateNotifier | Battery voltage critically low 11.545 (T+33550576 ms)
 2020-05-30 23:40:19.865 | INFO | Telemetry Process | plugins.state_monitor.StateNotifier | Battery voltage critically low 11.542 (T+33581908 ms)
 2020-05-30 23:41:18.548 | INFO | Telemetry Process | plugins.state_monitor.StateNotifier | Battery voltage critically low 11.530 (T+33640590 ms)
+2020-05-30 23:41:58.554 | INFO | Telemetry Process | plugins.state_monitor.StateNotifier | Battery voltage critically low 11.530 (T+33680597 ms)
