@@ -1,4 +1,3 @@
-2020-06-01 10:36:37.389 | INFO | MainProcess | brokkr.start | Presets config: ['builtins', 'hamma2', 'state_monitor', 'sunsaver_mppt_15l'] (T+1267 ms)
 2020-06-01 10:36:37.390 | INFO | MainProcess | brokkr.multiprocess.handler | Starting worker process <Process(Telemetry Process, initial)> (T+1268 ms)
 2020-06-01 10:36:37.394 | INFO | MainProcess | brokkr.multiprocess.handler | Finished starting worker process <Process(Telemetry Process, started)> (T+1272 ms)
 2020-06-01 10:36:37.395 | INFO | MainProcess | brokkr.multiprocess.handler | Starting manager (T+1273 ms)
@@ -28,3 +27,4 @@
 2020-06-01 20:39:46.662 | INFO | Telemetry Process | plugins.state_monitor.StateNotifier | Battery voltage critically low 11.530 (T+36190540 ms)
 2020-06-01 22:27:06.616 | INFO | Telemetry Process | plugins.state_monitor.StateNotifier | Battery voltage critically low 11.569 (T+42630493 ms)
 2020-06-01 22:31:56.657 | INFO | Telemetry Process | plugins.state_monitor.StateNotifier | Battery voltage critically low 11.572 (T+42920535 ms)
+2020-06-01 22:47:16.787 | INFO | Telemetry Process | plugins.state_monitor.StateNotifier | Battery voltage critically low 11.420 (T+43840665 ms)
